@@ -21,9 +21,6 @@ public function signup() {
 }
 
 public function p_signup() {
-	echo 'pre';
-	print_r($_POST);
-	echo '</pre>';
 
 	# storing time of creation and modfication for the user
 	$_POST['created'] = Time::now();
@@ -38,8 +35,12 @@ public function p_signup() {
 	#insert this user into the database
 	$user_id = DB::instance(DB_NAME)->insert('users', $_POST);
 
-	#make a proper view here
-	echo 'You\'re signed up';
+	##Setup view
+	$this->template->content = View::instance('v_users_successful_signup');
+	$this->template->title = "Welcome!";
+
+	#Render template
+	echo $this->template;
 }
 
 public function login() {
