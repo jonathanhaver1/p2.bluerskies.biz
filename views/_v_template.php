@@ -13,7 +13,7 @@
 
 <body>	
 
-	<div id ='menu'>
+	<div id ='menu a'>
 
 		<a href='/'>Home</a>
 

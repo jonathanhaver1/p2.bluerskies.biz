@@ -4,11 +4,11 @@ class users_controller extends base_controller {
 
 public function _construct() {
 	parent::_construct;
-	echo "users_controller construct called <br><br>";
 }
 
 public function index() {
-	echo "This is the index page";
+	$this->template->content = View::instance('v_index');
+	$this->template->title = "BluerSkies";
 }
 
 public function signup() {
@@ -22,6 +22,12 @@ public function signup() {
 
 public function p_signup() {
 
+	# Dump out the results of POST to see what the form submitted
+    echo '<pre>';
+    print_r($_POST);
+    echo '</pre>';
+    sleep(10);
+
 	# storing time of creation and modfication for the user
 	$_POST['created'] = Time::now();
 	$_POST['modified'] = Time::now();
@@ -33,7 +39,7 @@ public function p_signup() {
 	$_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 
 	#insert this user into the database
-	$user_id = DB::instance(DB_NAME)->insert('users', $_POST);
+	$user_id = DB::instance(DB_NAME)->insert("users", $_POST);
 
 	##Setup view
 	$this->template->content = View::instance('v_users_successful_signup');
@@ -43,9 +49,11 @@ public function p_signup() {
 	echo $this->template;
 }
 
-public function login() {
-	#Setup view
+public function login($error = NULL) {
+
+	#Set up view
 	$this->template->content = View::instance('v_users_login');
+	$this->template->content->error = $error;
 	$this->template->title = "Login";
 
 	# Render template
@@ -70,7 +78,9 @@ public function p_login() {
 
 	# No matching token -> login failed -> return to login page
 	if(!$token) {
-		Router::redirect("/users/login/");
+
+		Router::redirect("/users/login/error");
+
 	# Matching token -> login succeeded
 	} else {
 		/* Store this token in a cookie
@@ -78,7 +88,7 @@ public function p_login() {
 		param 2 = the value of the cookie
 		param 4 = the path of the cookie
 		*/
-		setcookie("token", $token, strtotime('+1 year'), '/');
+		setcookie("token", $token, strtotime('+2 weeks'), '/');
 
 		# Send to the main page
 		Router::redirect("/");
