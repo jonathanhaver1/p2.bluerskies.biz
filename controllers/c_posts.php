@@ -14,7 +14,7 @@ class posts_controller extends base_controller {
 	public function add() {
 
 	##Setup view
-	$this->template->content = View::instance('v_posts_add_post');
+	$this->template->content = View::instance('v_posts_add');
 	$this->template->title = "Compose a Post";
 
 	#Render template

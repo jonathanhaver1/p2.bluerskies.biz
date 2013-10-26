@@ -1,7 +1,7 @@
 <form method='POST' action='/users/p_login'>
 
 	Email<br>
-	<input type ='text' name ='mail'>
+	<input type ='text' name ='email'>
 
 	<br><br>
 

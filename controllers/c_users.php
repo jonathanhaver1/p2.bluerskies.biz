@@ -28,6 +28,10 @@ public function p_signup() {
     echo '</pre>';
     sleep(10);
 
+    		echo '<pre>';
+print_r($this->user);
+echo '</pre>';
+
 	# storing time of creation and modfication for the user
 	$_POST['created'] = Time::now();
 	$_POST['modified'] = Time::now();
@@ -55,6 +59,8 @@ public function login($error = NULL) {
 	$this->template->content = View::instance('v_users_login');
 	$this->template->content->error = $error;
 	$this->template->title = "Login";
+
+sleep(10);
 
 	# Render template
 	echo $this->template;
@@ -120,6 +126,10 @@ public function profile() {
 	# if logged in -> Setup view
 	$this->template->content = View::instance('v_users_profile');
 	$this->template->title = "Profile of ".$this->user->first_name;
+
+	$this->template->address;
+	$this->template->birthyear;
+	$this->template->photo;
 
 	# Render template
 	echo $this->template;
