@@ -126,14 +126,23 @@ public function profile() {
 	# if logged in -> Setup view
 	$this->template->content = View::instance('v_users_profile');
 	$this->template->title = "Profile of ".$this->user->first_name;
-	$this->user->city="City";
-	$this->user->interests="interests";
 
-	//$this->template->address;
-	//$this->template->birthyear;
-	//$this->template->photo;
+		# Build the query
+	$q = 'SELECT 
+			city,
+			country,
+			interests,
+			birthyear
+		FROM user_profiles
+		WHERE user_id = '.$this->user->user_id;
 
-	# Render template
+	# Run the query
+	$profile = DB::instance(DB_NAME)->select_row($q);
+
+	# Pass data to the View
+	$this->template->content->profile = $profile;
+	
+	# Render the View
 	echo $this->template;
 }
 
@@ -144,7 +153,7 @@ public function profile() {
 //	}
 //	else {
 //		echo "This is the profile for ".$user_name;
-//	}
+//	}ä
 //}
 }
 

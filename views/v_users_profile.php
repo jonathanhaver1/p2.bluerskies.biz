@@ -1,8 +1,12 @@
 <h1>This is the profile of <?=$user->first_name?></h1>
+
 <br>
-First Name:	<?=$user->first_name?><br>
-Last Name:	<?=$user->last_name?><br>
+City:		<?=$profile['city']?><br>
+Country:	<?=$profile['country']?><br>
 <br>
-City:		<?=$user->city?><br>
+Interests:	<?=$profile['interests']?><br>
 <br>
-Interests:	<?=$user->interests?><br>
+Birth Year: <?=$profile['birthyear']?><br>
+
+
+<a href="/profiles/modify_profile">Modify my Profile</a>
