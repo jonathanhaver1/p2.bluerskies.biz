@@ -19,6 +19,7 @@
 		<li>Upload a profile photo</li>
 		<li>Email verification (requires users to click a link in their email before their account is created)</li>
 		<li>"Send to a friend" feature where posts can be emailed to friends</li>
+		<li>Edit and display basic profile info (location, bio, etc.)</li>
 		</ul>
 
 		<br>

@@ -108,7 +108,7 @@ public function logout() {
 
 	# Update the database
 	$data = Array("token" => $new_token);
-	DB::instance(DB_NAME)->update("users", $data, "WHERE token = #".$this->user->token."'");
+	DB::instance(DB_NAME)->update("users", $data, "WHERE token = '".$this->user->token."'");
 
 	# 'Delete' token
 	setcookie("token", "", strtotime('-1 year'), '/');
@@ -126,10 +126,12 @@ public function profile() {
 	# if logged in -> Setup view
 	$this->template->content = View::instance('v_users_profile');
 	$this->template->title = "Profile of ".$this->user->first_name;
+	$this->user->city="City";
+	$this->user->interests="interests";
 
-	$this->template->address;
-	$this->template->birthyear;
-	$this->template->photo;
+	//$this->template->address;
+	//$this->template->birthyear;
+	//$this->template->photo;
 
 	# Render template
 	echo $this->template;
