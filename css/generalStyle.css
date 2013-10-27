@@ -4,7 +4,8 @@
 				height: 60%;
 				margin-top:	5%;
 				margin-left: 10%;
-				background-image: url("ricepaper_v3.png");
+				//background-image: url("/css/ricepaper_v3.png");
+				background-color: #CCCCFF;
 				background-repeat: repeat;
 			}
 
@@ -14,6 +15,7 @@
 				text-align: center;
 				font-family: arial;
 				font-size: x-large;
+				color: #000099;
 			}
 
 			p {
@@ -34,11 +36,23 @@
 				font-family: arial;
 			}
 
-			form {
-				text-align: right;
-				margin-right: 10%;
+			ul {
+				padding-left:40%;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				font-family: arial;
 			}
 
+			form {
+				border: 10px ridge #990000;
+				margin-top: 25px;
+				margin-bottom: 25px;
+				margin-left: 35%;
+				margin-right: 35%;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-align: center;		
+			}
 
 			#greeting {
 				margin-left: 30px;
@@ -47,6 +61,7 @@
 				font-size: 190%;
 				color: #000099;
 			}
+
 			#introduction {
 				color: black;
 				margin-left: 10%;
@@ -60,14 +75,15 @@
 				margin-bottom: 35px;
 			}
 
-			#remark {
+			#profile {
 				border: 10px ridge #990000;
 				margin-top: 25px;
 				margin-bottom: 25px;
 				margin-left: 15%;
 				margin-right: 15%;
 				padding-left: 10px;
-				padding-right: 10px;		
+				padding-right: 10px;
+				font-family: cursive;	
 			}
 
 			#notes {
@@ -96,6 +112,7 @@
 				display: block;
 				border: 8px blue outset;
 				background-color: #DDDDFF;
+				float: left;
 			}
 
 			#menu a:hover {

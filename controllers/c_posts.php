@@ -36,35 +36,17 @@ class posts_controller extends base_controller {
 		DB::instance(DB_NAME)->insert('posts', $_POST);
 
 		# Quick and dirty feedback
-		echo "Your post has been added. <a href='/posts/add'>Add another</a>";
 
+			##Setup view
+			$this->template->content = View::instance('v_posts_added_successfully');
+			$this->template->title = "Success";
+			echo $this->template;
 	}
-
-	//public function add_new_post () {
-	//
-	//	$userid = $_SESSION['user_id'];
-	//
-	//	$body = substr($_POST['body'],0,700);
-	//
-	//	//add_post($userid, $body);
-	//	$sql = "INSERT INTO posts (user_id, body, stamp)
-	//			VALUES ($userid, '". mysql_real_escape_string($body). "', now())";
-	//	$result = mysql_query($sql);
-	//}
 
 	public function display_posts() {
 		
 		$posts = array();
 		$userid = 529;
-
-		// $user_string = implode(',', $userid);
-		// $extra = " and id in ($user_string)";
-
-		// if ($limit > 0) {
-		//	$extra = "limit $limit";
-		//} else {
-		//	$extra = '';
-		//}
 
 		$sql = "SELECT body, stamp
 				FROM posts
@@ -72,15 +54,6 @@ class posts_controller extends base_controller {
 				ORDER BY stamp
 				DESC";
 		$result = mysql_query($sql);
-
-		//while($data = mysql_fetch_object($result)) {
-		//	$posts[] = array(	'stamp' => $data->stamp,
-		//						'userid' => $userid,
-		//						'body' => $data->body
-		//					);
-		//}
-
-		//return $posts;
 
 		echo $result;
 
@@ -117,6 +90,7 @@ class posts_controller extends base_controller {
 	echo $this->template;
 
 }
+
 
 	public function users() {
 
@@ -178,7 +152,7 @@ class posts_controller extends base_controller {
 		# Send them back
 		Router::redirect("/posts/users");
 
-}
+	}
 
 }
 

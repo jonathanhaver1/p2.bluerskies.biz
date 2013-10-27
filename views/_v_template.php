@@ -13,7 +13,7 @@
 
 <body>	
 
-	<div id ='menu a'>
+	<div id ='menu'>
 
 		<a href='/'>Home</a>
 
@@ -28,10 +28,17 @@
 			<a href='/users/signup'>Sign up</a>
 			<a href='/users/login'>Log in</a>
 		<?php endif; ?>
-
 	</div>
 
-	<br>
+		<div id='photo'>
+			<br>
+			<img src="/css/bluerskies.jpg" alt="Bluer Skies" width="500" height="100"><br>
+			<span style="font-size: x-small">© Chrisharvey (
+				<a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a>
+				& <a href="http://www.stockfreeimages.com/">Stock Free Images</a>)
+			</span>
+
+		</div>
 
 	<?php if(isset($content)) echo $content; ?>
 

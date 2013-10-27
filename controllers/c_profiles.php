@@ -7,6 +7,10 @@ class profiles_controller extends base_controller {
 	}
 
 	public function create_profile() {
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+		Router::redirect('/users/login'); }
+
 		##Setup view
 		$this->template->content = View::instance('v_profiles_create_profile');
 		$this->template->title = "Create a Profile";
@@ -20,7 +24,7 @@ class profiles_controller extends base_controller {
 		$user_id = $this->user->user_id;
 
 		#insert this user into the database
-		DB::instance(DB_NAME)->update("user_profiles", $_POST, "WHERE user_id = ".$this->user->user_id." ");
+		DB::instance(DB_NAME)->update("user_profiles", $_POST, "WHERE user_id = ".$user_id." ");
 
 		##Setup view
 		$this->template->content = View::instance('v_profiles_successful_creation');
@@ -31,6 +35,11 @@ class profiles_controller extends base_controller {
 	}
 
 	public function modify_profile() {
+
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+			Router::redirect('/users/login');
+		}
 
 		##Setup view
 		$this->template->content = View::instance('v_profiles_modify_profile');
@@ -55,6 +64,11 @@ class profiles_controller extends base_controller {
 	}
 
 	public function display_profile() {
+
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+			Router::redirect('/users/login');
+		}
 	
 		# Set up the View
 		$this->template->content = View::instance('v_posts_index');
@@ -81,6 +95,46 @@ class profiles_controller extends base_controller {
 		# Pass data to the View
 		$this->template->content->posts = $posts;
 
+		# Render the View
+		echo $this->template;
+	}
+
+	public function find_profile() {
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+			Router::redirect('/users/login');
+		}
+
+		// ask which user in v_find_profile()
+		// return with POST to p_find_profile()
+	}
+
+
+	public function p_find_profile() {
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+			Router::redirect('/users/login');
+		}
+
+		# if logged in -> Setup view
+		$this->template->content = View::instance('v_users_profile');
+		$this->template->title = "Profile of ".$POST['user_id'];
+
+			# Build the query
+		$q = 'SELECT 
+				city,
+				country,
+				interests,
+				birthyear
+			FROM user_profiles
+			WHERE user_id = '.$POST['user_id'];
+
+		# Run the query
+		$profile = DB::instance(DB_NAME)->select_row($q);
+
+		# Pass data to the View
+		$this->template->content->profile = $profile;
+		
 		# Render the View
 		echo $this->template;
 	}
