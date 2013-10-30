@@ -9,7 +9,6 @@
     <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
         <?=Time::display($post['created'])?>
     </time>
+            <a href='/posts/email/<?=$post['post_id']?>'>Email this Post</a>
 
 </article>
-
-<?php endforeach; ?>

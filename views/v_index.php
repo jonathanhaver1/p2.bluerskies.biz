@@ -22,11 +22,14 @@
 		<ul>
 			<li>Edit and display profile info</li>
 			<li>Send a post to a friend</li>
+			<li>Send your profile to a friend</li>
+			<li>Get a special welcome email</li>
 		</ul>
 	</div>
 
 		<ul>
 			POSTS<br>
+			<li><a href="/posts/index">Index of Posts</a></li>
 			<li><a href="/posts/index">View a stream of posts from the users you follow</a></li>
 			<li><a href="/posts/add">Add a Post</a></li>
 			<li><a href="/posts/users">Follow or Unfollow Other Users</a>

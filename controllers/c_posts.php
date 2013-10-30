@@ -2,8 +2,8 @@
 
 class posts_controller extends base_controller {
 
-	public function __construct() {
-		parent::__construct();
+	public function _construct() {
+		parent::_construct();
 
 		# Make sure user is logged in if they want to use anything in this controller
 		if(!$this->user) {
@@ -66,19 +66,13 @@ class posts_controller extends base_controller {
 	$this->template->title   = "Posts";
 
 	# Build the query
-	$q = 'SELECT 
-			posts.content,
-			posts.created,
-			posts.user_id AS post_user_id,
-			users_users.user_id AS follower_id,
-			users.first_name,
-			users.last_name
+	$q = "SELECT 
+            posts.* , 
+            users.first_name, 
+            users.last_name
 		FROM posts
-		INNER JOIN users_users 
-			ON posts.user_id = users_users.user_id_followed
-		INNER JOIN users 
-			ON posts.user_id = users.user_id
-		WHERE users_users.user_id = '.$this->user->user_id;
+        INNER JOIN users 
+            ON posts.user_id = users.user_id";
 
 	# Run the query
 	$posts = DB::instance(DB_NAME)->select_rows($q);
@@ -152,6 +146,49 @@ class posts_controller extends base_controller {
 		# Send them back
 		Router::redirect("/posts/users");
 
+	}
+
+	public function email($post_id) {
+
+		##Setup view
+		$this->template->content = View::instance('v_posts_email');
+		$this->template->title = "Compose a Post";
+
+		#Render template
+		echo $this->template;
+	}
+
+	public function p_email() {
+
+		##Setup view
+		$this->template->content = View::instance('v_posts_email');
+		$this->template->title = "Compose a Post";
+
+		#Render template
+		echo $this->template;
+
+		# Build a multi-dimension array of recipients of this email
+		$to[] = Array("name" => "Judy Grimes", "email" => "judy@gmail.com");
+
+		# Build a single-dimension array of who this email is coming from
+		# note it's using the constants we set in the configuration above)
+		$from = Array("name" => APP_NAME, "email" => APP_EMAIL);
+
+		# Subject
+		$subject = "Welcome to JavaBeans";
+
+		# You can set the body as just a string of text
+		$body = "Hi Judy, this is just a message to confirm your registration at JavaBeans.com";
+
+		# OR, if your email is complex and involves HTML/CSS, you can build the body via a View just like we do in our controllers
+		# $body = View::instance('e_users_welcome');
+
+		# Build multi-dimension arrays of name / email pairs for cc / bcc if you want to 
+		$cc  = "";
+		$bcc = "";
+
+		# With everything set, send the email
+		$email = Email::send($to, $from, $subject, $body, true, $cc, $bcc);
 	}
 
 }

@@ -1,5 +1,8 @@
 <? foreach($users as $user): ?>
 
+<?php echo $users; ?>
+<?=$user?>
+
     <!-- Print this user's name -->
     <?=$user['first_name']?> <?=$user['last_name']?>
 
