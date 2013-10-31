@@ -10,12 +10,14 @@
 	Birth Year: <?=$profile['birthyear']?><br>
 </div>
 
-<br>
-<span style = "margin-left: 30%">
 	<div id = "menu">
-		<a href="/profiles/modify_profile">Modify my Profile</a>
+		<ul>
+			<li><a href="/profiles/find_profile">Display a Profile of Another User</a></li>
+			<li><a href="/users/profile">Check Out Your Profile</a></li>
+			<li><a href="/profiles/create_profile">Add Your Profile</a></li>
+			<li><a href="/profiles/modify_profile">Modify Your Profile</a></li>
+		</ul>
 	</div>
-</span>
 
 <br>
 <br>

@@ -43,47 +43,38 @@ class posts_controller extends base_controller {
 			echo $this->template;
 	}
 
-	public function display_posts() {
-		
-		$posts = array();
-		$userid = 529;
-
-		$sql = "SELECT body, stamp
-				FROM posts
-				WHERE user_id = '$userid'
-				ORDER BY stamp
-				DESC";
-		$result = mysql_query($sql);
-
-		echo $result;
-
-	}
-
 	public function index() {
 
-	# Set up the View
-	$this->template->content = View::instance('v_posts_index');
-	$this->template->title   = "Posts";
+		# Set up the View
+		$this->template->content = View::instance('v_posts_index');
+		$this->template->title   = "Posts";
 
-	# Build the query
-	$q = "SELECT 
-            posts.* , 
-            users.first_name, 
+		# Build the query
+    # Query
+    $q = 'SELECT 
+            posts.post_id,
+            posts.content,
+            posts.created,
+            posts.user_id AS post_user_id,
+            users_users.user_id AS follower_id,
+            users.first_name,
             users.last_name
-		FROM posts
+        FROM posts
+        INNER JOIN users_users 
+            ON posts.user_id = users_users.user_id_followed
         INNER JOIN users 
-            ON posts.user_id = users.user_id";
+            ON posts.user_id = users.user_id
+        WHERE users_users.user_id = '.$this->user->user_id;
 
-	# Run the query
-	$posts = DB::instance(DB_NAME)->select_rows($q);
+		# Run the query
+		$posts = DB::instance(DB_NAME)->select_rows($q);
 
-	# Pass data to the View
-	$this->template->content->posts = $posts;
+		# Pass data to the View
+		$this->template->content->posts = $posts;
 
-	# Render the View
-	echo $this->template;
-
-}
+		# Render the View
+		echo $this->template;
+	}
 
 
 	public function users() {
@@ -148,37 +139,50 @@ class posts_controller extends base_controller {
 
 	}
 
-	public function email($post_id) {
+	public function email($post_id = null) {
 
 		##Setup view
 		$this->template->content = View::instance('v_posts_email');
-		$this->template->title = "Compose a Post";
+		$this->template->title = "Email the Post to a Friend";
+		$this->template->content->post_id = $post_id;
 
 		#Render template
 		echo $this->template;
 	}
 
-	public function p_email() {
+	public function p_email($post_id = null) {
 
-		##Setup view
-		$this->template->content = View::instance('v_posts_email');
-		$this->template->title = "Compose a Post";
+		# Build the query
+   		# Query
+    	$q = "SELECT 
+            	email
+        		FROM friends
+                WHERE first_name = ".$_POST['first_name']."
+                AND last_name = ".$_POST['last_name'];
 
-		#Render template
-		echo $this->template;
+		# Run the query
+		$email = DB::instance(DB_NAME)->select_field($q);
+
+		if ($friend['email'] == "") {
+			echo "Sorry, but this friend is not in your list";
+			echo "<a href = '/posts/email'> Go Back </a>";
+		}
 
 		# Build a multi-dimension array of recipients of this email
-		$to[] = Array("name" => "Judy Grimes", "email" => "judy@gmail.com");
+		$to[] = Array("name" => $_POST['first_name']." ".$_POST['last_name'], "email" => $email);
 
 		# Build a single-dimension array of who this email is coming from
 		# note it's using the constants we set in the configuration above)
 		$from = Array("name" => APP_NAME, "email" => APP_EMAIL);
 
 		# Subject
-		$subject = "Welcome to JavaBeans";
+		$subject = "Invite";
 
 		# You can set the body as just a string of text
-		$body = "Hi Judy, this is just a message to confirm your registration at JavaBeans.com";
+		$body = 	"Hi ".$friend['first_name'].", I would like you to try out my new application BluerSkies at bluerskies.biz.\n
+					There is some really fun stuff to do on it.\n
+					All the very best,\n\n
+					Jonathan";
 
 		# OR, if your email is complex and involves HTML/CSS, you can build the body via a View just like we do in our controllers
 		# $body = View::instance('e_users_welcome');
@@ -187,8 +191,19 @@ class posts_controller extends base_controller {
 		$cc  = "";
 		$bcc = "";
 
+
+		# Build the query
+    	# Query
+   		 $q = 'SELECT 
+            content
+        FROM posts
+        WHERE post_id = '.$post_id;
+
+		# Run the query
+		$post_content = DB::instance(DB_NAME)->select_field($q);
+
 		# With everything set, send the email
-		$email = Email::send($to, $from, $subject, $body, true, $cc, $bcc);
+		$email = Email::send($to, $from, $subject, $post_content, true, $cc, $bcc);
 	}
 
 }

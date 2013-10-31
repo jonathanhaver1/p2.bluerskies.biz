@@ -1,0 +1,255 @@
+2013-10-31 11:09:21 - INFO --> -------------------------- 
+2013-10-31 11:09:21 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:09:21 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:09:21 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:09:21 - INFO --> To:  (),  
+2013-10-31 11:09:21 - INFO --> CC:  
+2013-10-31 11:09:21 - INFO --> BCC:  
+2013-10-31 11:09:21 - INFO --> Subject: Invite 
+2013-10-31 11:09:21 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:09:21 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 11:10:44 - INFO --> -------------------------- 
+2013-10-31 11:10:44 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:10:44 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:10:44 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:10:44 - INFO --> To:  (),  
+2013-10-31 11:10:44 - INFO --> CC:  
+2013-10-31 11:10:44 - INFO --> BCC:  
+2013-10-31 11:10:44 - INFO --> Subject: Invite 
+2013-10-31 11:10:44 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:10:44 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 11:10:45 - INFO --> -------------------------- 
+2013-10-31 11:10:45 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:10:45 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:10:45 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:10:45 - INFO --> To:  (),  
+2013-10-31 11:10:45 - INFO --> CC:  
+2013-10-31 11:10:45 - INFO --> BCC:  
+2013-10-31 11:10:45 - INFO --> Subject: Invite 
+2013-10-31 11:10:45 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:10:45 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 11:10:47 - INFO --> -------------------------- 
+2013-10-31 11:10:47 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:10:47 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:10:47 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:10:47 - INFO --> To:  (),  
+2013-10-31 11:10:47 - INFO --> CC:  
+2013-10-31 11:10:47 - INFO --> BCC:  
+2013-10-31 11:10:47 - INFO --> Subject: Invite 
+2013-10-31 11:10:47 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:10:47 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 11:14:26 - INFO --> -------------------------- 
+2013-10-31 11:14:26 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:14:26 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:14:26 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:14:26 - INFO --> To:  (),  
+2013-10-31 11:14:26 - INFO --> CC:  
+2013-10-31 11:14:26 - INFO --> BCC:  
+2013-10-31 11:14:26 - INFO --> Subject: Invite 
+2013-10-31 11:14:26 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:14:26 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 11:15:52 - INFO --> -------------------------- 
+2013-10-31 11:15:52 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:15:52 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:15:52 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:15:52 - INFO --> To:  (),  
+2013-10-31 11:15:52 - INFO --> CC:  
+2013-10-31 11:15:52 - INFO --> BCC:  
+2013-10-31 11:15:52 - INFO --> Subject: Invite 
+2013-10-31 11:15:52 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:15:52 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 11:16:26 - INFO --> -------------------------- 
+2013-10-31 11:16:26 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:16:26 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:16:26 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:16:26 - INFO --> To:  (),  
+2013-10-31 11:16:26 - INFO --> CC:  
+2013-10-31 11:16:26 - INFO --> BCC:  
+2013-10-31 11:16:26 - INFO --> Subject: Invite 
+2013-10-31 11:16:26 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:16:26 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 11:16:44 - INFO --> -------------------------- 
+2013-10-31 11:16:44 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:16:44 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:16:44 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:16:44 - INFO --> To:  (),  
+2013-10-31 11:16:44 - INFO --> CC:  
+2013-10-31 11:16:44 - INFO --> BCC:  
+2013-10-31 11:16:44 - INFO --> Subject: Invite 
+2013-10-31 11:16:44 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:16:44 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 11:17:10 - INFO --> -------------------------- 
+2013-10-31 11:17:10 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 11:17:10 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 11:17:10 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 11:17:10 - INFO --> To:  (),  
+2013-10-31 11:17:10 - INFO --> CC:  
+2013-10-31 11:17:10 - INFO --> BCC:  
+2013-10-31 11:17:10 - INFO --> Subject: Invite 
+2013-10-31 11:17:10 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 11:17:10 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 12:06:25 - INFO --> -------------------------- 
+2013-10-31 12:06:25 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 12:06:25 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 12:06:25 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 12:06:25 - INFO --> To:   (),  
+2013-10-31 12:06:25 - INFO --> CC:  
+2013-10-31 12:06:25 - INFO --> BCC:  
+2013-10-31 12:06:25 - INFO --> Subject: Invite 
+2013-10-31 12:06:25 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 12:06:25 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 12:12:12 - INFO --> -------------------------- 
+2013-10-31 12:12:12 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 12:12:12 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 12:12:12 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 12:12:12 - INFO --> To:   (),  
+2013-10-31 12:12:12 - INFO --> CC:  
+2013-10-31 12:12:12 - INFO --> BCC:  
+2013-10-31 12:12:12 - INFO --> Subject: Invite 
+2013-10-31 12:12:12 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 12:12:12 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 12:13:44 - INFO --> -------------------------- 
+2013-10-31 12:13:44 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 12:13:44 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 12:13:44 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 12:13:44 - INFO --> To:   (),  
+2013-10-31 12:13:44 - INFO --> CC:  
+2013-10-31 12:13:44 - INFO --> BCC:  
+2013-10-31 12:13:44 - INFO --> Subject: Invite 
+2013-10-31 12:13:44 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 12:13:44 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 12:15:33 - INFO --> -------------------------- 
+2013-10-31 12:15:33 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 12:15:33 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 12:15:33 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 12:15:33 - INFO --> To:   (),  
+2013-10-31 12:15:33 - INFO --> CC:  
+2013-10-31 12:15:33 - INFO --> BCC:  
+2013-10-31 12:15:33 - INFO --> Subject: Invite 
+2013-10-31 12:15:33 - INFO --> Body: Hi , I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 12:15:33 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 12:16:12 - INFO --> -------------------------- 
+2013-10-31 12:16:12 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 12:16:12 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 12:16:12 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 12:16:12 - INFO --> To: friend1 friend1 (friend1),  
+2013-10-31 12:16:12 - INFO --> CC:  
+2013-10-31 12:16:12 - INFO --> BCC:  
+2013-10-31 12:16:12 - INFO --> Subject: Invite 
+2013-10-31 12:16:12 - INFO --> Body: Hi friend1, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 12:16:12 - INFO --> FAILED TO SEND EMAIL 
+2013-10-31 12:55:53 - INFO --> -------------------------- 
+2013-10-31 12:55:53 - INFO --> Controller/Method: friends/email_invitation 
+2013-10-31 12:55:53 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-10-31 12:55:53 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-10-31 12:55:53 - INFO --> To: friend1 friend1 (friend1),  
+2013-10-31 12:55:53 - INFO --> CC:  
+2013-10-31 12:55:53 - INFO --> BCC:  
+2013-10-31 12:55:53 - INFO --> Subject: Invite 
+2013-10-31 12:55:53 - INFO --> Body: Hi friend1, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-10-31 12:55:53 - INFO --> FAILED TO SEND EMAIL 

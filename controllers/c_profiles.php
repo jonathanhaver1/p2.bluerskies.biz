@@ -105,32 +105,56 @@ class profiles_controller extends base_controller {
 			Router::redirect('/users/login');
 		}
 
-		// ask which user in v_find_profile()
-		// return with POST to p_find_profile()
+		# Set up the View
+		$this->template->content = View::instance("v_profiles_find_profile");
+		$this->template->title   = "Find a Profile";
+
+		# Build the query to get all the users
+		$q = "	SELECT
+					user_profiles.profile_id,
+					users.first_name,
+					users.last_name
+				FROM user_profiles
+				INNER JOIN users 
+				ON users.user_id = user_profiles.user_id";
+
+		# Execute the query to get all the users. 
+		# Store the result array in the variable $users
+		$user_profiles = DB::instance(DB_NAME)->select_rows($q);
+
+		# Pass data (users and connections) to the view
+		$this->template->content->user_profiles = $user_profiles;
+
+		# Render the view
+		echo $this->template;
 	}
 
 
-	public function p_find_profile() {
+	public function p_find_profile($profile_id = null) {
 		# if not logged in -> redirect to the login page
 		if (!$this->user) {
 			Router::redirect('/users/login');
 		}
 
-		# if logged in -> Setup view
-		$this->template->content = View::instance('v_users_profile');
-		$this->template->title = "Profile of ".$POST['user_id'];
-
 			# Build the query
 		$q = 'SELECT 
-				city,
-				country,
-				interests,
-				birthyear
-			FROM user_profiles
-			WHERE user_id = '.$POST['user_id'];
+				user_profiles.city,
+				user_profiles.country,
+				user_profiles.interests,
+				user_profiles.birthyear,
+				users.first_name,
+				users.last_name
+				FROM user_profiles
+				INNER JOIN users 
+				ON users.user_id = user_profiles.user_id
+				WHERE profile_id = '.$profile_id;
 
 		# Run the query
 		$profile = DB::instance(DB_NAME)->select_row($q);
+
+		#Setup view
+		$this->template->content = View::instance('v_users_profile');
+		$this->template->title = "Profile of ".$profile['first_name'];
 
 		# Pass data to the View
 		$this->template->content->profile = $profile;
