@@ -5,13 +5,16 @@ class posts_controller extends base_controller {
 	public function _construct() {
 		parent::_construct();
 
-		# Make sure user is logged in if they want to use anything in this controller
-		if(!$this->user) {
-			die("Members only. <a href='/users/login'>Login</a>");
-		}
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+		Router::redirect('/users/login'); }
 	}
 
 	public function add() {
+
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+		Router::redirect('/users/login'); }
 
 	##Setup view
 	$this->template->content = View::instance('v_posts_add');
@@ -44,6 +47,10 @@ class posts_controller extends base_controller {
 	}
 
 	public function index() {
+
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+		Router::redirect('/users/login'); }
 
 		# Set up the View
 		$this->template->content = View::instance('v_posts_index');
@@ -78,6 +85,10 @@ class posts_controller extends base_controller {
 
 
 	public function users() {
+
+		# if not logged in -> redirect to the login page
+		if (!$this->user) {
+		Router::redirect('/users/login'); }
 
 		# Set up the View
 		$this->template->content = View::instance("v_posts_users");

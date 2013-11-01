@@ -4,9 +4,18 @@ class users_controller extends base_controller {
 
 public function _construct() {
 	parent::_construct;
+
+			# Make sure user is logged in if they want to use anything in this controller
+		if(!$this->user) {
+			die("Members only. <a href='/users/login'>Login</a>");
+		}
 }
 
 public function index() {
+			# Make sure user is logged in if they want to use anything in this controller
+		if(!$this->user) {
+			die("Members only. <a href='/users/login'>Login</a>");
+		}
 	$this->template->content = View::instance('v_index');
 	$this->template->title = "BluerSkies";
 }
@@ -21,16 +30,6 @@ public function signup() {
 }
 
 public function p_signup() {
-
-	# Dump out the results of POST to see what the form submitted
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
-    sleep(10);
-
-    		echo '<pre>';
-print_r($this->user);
-echo '</pre>';
 
 	# storing time of creation and modfication for the user
 	$_POST['created'] = Time::now();
@@ -144,17 +143,7 @@ public function profile() {
 	
 	# Render the View
 	echo $this->template;
-}
-
-//public function profile ($user_name = NULL) {
-//
-//	if (user_name == NULL) {
-//		echo "No user specified";
-//	}
-//	else {
-//		echo "This is the profile for ".$user_name;
-//	}ä
-//}
+	}
 }
 
 ?>

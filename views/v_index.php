@@ -6,46 +6,54 @@
 <body>
 
 <h1>
-	Welcome to <?=APP_NAME?><?php if($user) echo ','.$user->first_name; ?></h1>
+	Welcome to <?=APP_NAME?><?php if($user) echo ', '.$user->first_name; ?></h1>
 </h1>
 
 <body>
 
-	<div id="introduction">
+	<div id="special_features">
 		On this site you will be able to build a micro blog.<br>
 		<br>
-		<strong>+1</strong> You can also
+		<strong>+1</strong> You can also<br><br>
 
-		<ul>
-			<li>Edit and display profile info</li>
-			<li>Send a post to your friends</li>
-			<li>Send a profile to your friends</li>
-			<li>Compile, modify and display a list of your friends</li>
-			<li>Invite friends to join the site and contribute</li>
-		</ul>
+		Edit and display profile info<br>
+		Send a post to a friend or all your friends<br>
+		Send a profile to a friend or all your friends<br>
+		Compile, modify and display a list of your friends<br>
+		Invite friends to join the site and contribute<br>
+
 	</div>
+	<br>
+	<br>
 
-		<ul>
-			POSTS<br>
-			<li><a href="/posts/index">View a stream of posts from the users you follow</a></li>
-			<li><a href="/posts/users">Follow or Unfollow Other Users</a>
-			<li><a href="/posts/add">Add a Post</a></li>
+
+	<div id="menu_side">
+			<h2>POSTS</h2>
+			<ul>
+				<li class='active'><a href="/posts/index">View Posts</a></li>
+				<li><a href="/posts/users">Follow Users</a>
+				<li class='last'><a href="/posts/add">Add Post</a></li>
+			</ul>
 			<br>
-			<br>PROFILES<br>
-			<li><a href="/profiles/find_profile">Display a Profile of Another User</a></li>
-			<li><a href="/users/profile">Check Out Your Profile</a></li>
-			<li><a href="/profiles/create_profile">Add Your Profile</a></li>
-			<li><a href="/profiles/modify_profile">Modify Your Profile</a></li>
 			<br>
-			<br>FRIENDS<br>
-			<li><a href="/friends/index">See Your List of Friends</a></li>
-						<li>	Modify the List</li>
-						<li>	Remove a Friend</li>
-						<li>	Invite a Friend</li>
-
-			<li><a href="/friends/add">Add a Friend</a></li>
-		</ul>
-
-
+			<br>
+			<br>
+			<h2>PROFILES</h2>
+			<ul>
+				<li class='active'><a href="/profiles/find_profile">Display Profile</a></li>
+				<li><a href="/users/profile">Your Profile</a></li>
+				<li><a href="/profiles/create_profile">Add Profile</a></li>
+				<li class='last'><a href="/profiles/modify_profile">Modify Profile</a></li>
+			</ul>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h2>FRIENDS</h2>
+			<ul>
+				<li class ='active'><a href="/friends/index">Friends List</a></li>
+				<li class='last'><a href="/friends/add">Add Friend</a></li>
+			</ul>
+	</div>
 
 </body>

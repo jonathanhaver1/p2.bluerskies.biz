@@ -7,4 +7,12 @@
     <br><br>
     <input type='submit' value='New post'>
 
-</form> 
+</form>
+
+    <div id="menu_horizontal">
+            <ul>
+                <li><a href="/posts/index">Posts</a></li>
+                <li><a href="/users/index">Follow</a></li>
+                <li><a href="/profiles/find_profile">Profiles</a></li>
+            </ul>
+    </div> 
