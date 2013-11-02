@@ -1,0 +1,17 @@
+2013-11-01 15:50:39 - INFO --> -------------------------- 
+2013-11-01 15:50:39 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-01 15:50:39 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY jonathanhaverkampf@gmail.com 
+2013-11-01 15:50:39 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-01 15:50:39 - INFO --> To: John Doe (Doe),  
+2013-11-01 15:50:39 - INFO --> CC:  
+2013-11-01 15:50:39 - INFO --> BCC:  
+2013-11-01 15:50:39 - INFO --> Subject: Invite 
+2013-11-01 15:50:39 - INFO --> Body: Hi John, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-11-01 15:50:39 - INFO --> FAILED TO SEND EMAIL 

@@ -8,7 +8,10 @@
 
     <span id="post_table_name"><?=$post['first_name']?> <?=$post['last_name']?> posted:</span>
 
-    <br><br>
+        <br>
+        Likes: <?=$post['likes']?>
+        <br>
+        <br>
 
     <span id="post_content"><?=$post['content']?></span>
 
@@ -18,11 +21,11 @@
         <span style="font: arial">Date/Time: <?=Time::display($post['created'])?></span>
     </time>
 
-    <br>
-    
-    <a href="/posts/email/".<?=$post['post_id']?>>Email this Post</a>
 
-    <br><br><br>
+    <br>
+    <a href="/posts/email/<?=$post['post_id']?>">Email this Post</a><br>
+    <a href="/posts/like/<?=$post['post_id']?>">Like +1</a><br>
+    <br>
 
 </article>
 <?php endforeach; ?>

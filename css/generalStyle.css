@@ -5,9 +5,9 @@
 			body {
 				margin-top:	20px;
 				margin-left: 20px;
-				background-image: url("/css/lblue157.gif");
-				//background-color: #FFFFFF;
-				background-repeat: repeat;
+				//background-image: url("/css/lblue157.gif");
+				background-color: #FFFFFF;
+				//background-repeat: repeat;
 			}
 
 			h1 {
@@ -76,9 +76,8 @@
 				position: absolute;
 				top: 20px;
 				left: 630px;
-				font: arial;
+				color: #0000FF;
 				font-size: 36px;
-				font-color: blue;
 				font-style: bold;
 			}
 
@@ -94,7 +93,7 @@
 				padding-right: 10px;
 				font-family: cursive;
 				text-align: center;	
-				background-color: EEEEFF;
+				background-color: #EEEEFF;
 			}
 
 			#special_features {
@@ -110,7 +109,7 @@
 				padding-right: 10px;
 				font-family: cursive;
 				text-align: center;	
-				background-color: EEEEFF;	
+				background-color: #EEEEFF;	
 			}
 
 			#friends_list {
@@ -274,14 +273,13 @@
 				padding-right: 10px;
 				font-family: cursive;
 				text-align: center;	
-				background-color: EEEEFF;	
+				background-color: #EEEEFF;	
 			}
 			#post_table_name {
 				font:italic bold 12px/30px Georgia, serif;
 				color: #000099;
 				padding-top: 25px;
 				padding-bottom: 10px;	
-				background-color: EEEEFF;	
 			}
 
 			#menu_horizontal ul {

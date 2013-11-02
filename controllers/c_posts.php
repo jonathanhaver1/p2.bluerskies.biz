@@ -57,11 +57,12 @@ class posts_controller extends base_controller {
 		$this->template->title   = "Posts";
 
 		# Build the query
-    # Query
-    $q = 'SELECT 
+    	# Query
+    	$q = 'SELECT 
             posts.post_id,
             posts.content,
             posts.created,
+            posts.likes,
             posts.user_id AS post_user_id,
             users_users.user_id AS follower_id,
             users.first_name,
@@ -136,7 +137,6 @@ class posts_controller extends base_controller {
 
 		# Send them back
 		Router::redirect("/posts/users");
-
 	}
 
 	public function unfollow($user_id_followed) {
@@ -215,6 +215,26 @@ class posts_controller extends base_controller {
 
 		# With everything set, send the email
 		$email = Email::send($to, $from, $subject, $post_content, true, $cc, $bcc);
+	}
+
+		public function like($post_id = null) {
+
+		# get current likes information from database
+   		$q = 'SELECT 
+            	likes
+        		FROM posts
+        		WHERE post_id = '.$post_id;
+		$likes = DB::instance(DB_NAME)->select_field($q);
+
+		# increment the value by 1
+		$likes += 1;
+
+		# update the database
+		$data = Array("likes" => $likes);
+		DB::instance(DB_NAME)->update("posts", $data, "WHERE post_id = '".$post_id."'");
+
+		# Send them back
+		Router::redirect("/posts/index");
 	}
 
 }

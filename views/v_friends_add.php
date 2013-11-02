@@ -29,3 +29,9 @@
     <input type='submit' value='Add Friend'>
 
 </form> 
+
+<div id = "comment_box_right">
+    When you add a friend, only you have access to your friends.<br>
+    You can send posts and profiles to your friends.<br>
+    You can also send them an invitation to join as users.
+    </div>

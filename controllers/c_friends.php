@@ -24,6 +24,9 @@ class friends_controller extends base_controller {
 
 	public function p_add() {
 
+		# Associate this friend with this user
+		$_POST['user_id']  = $this->user->user_id;
+
 		# Add a timestamp
 		$_POST['created']  = Time::now();
 		$_POST['modified'] = Time::now();

@@ -11,15 +11,6 @@ public function _construct() {
 		}
 }
 
-public function index() {
-			# Make sure user is logged in if they want to use anything in this controller
-		if(!$this->user) {
-			die("Members only. <a href='/users/login'>Login</a>");
-		}
-	$this->template->content = View::instance('v_index');
-	$this->template->title = "BluerSkies";
-}
-
 public function signup() {
 	##Setup view
 	$this->template->content = View::instance('v_users_signup');

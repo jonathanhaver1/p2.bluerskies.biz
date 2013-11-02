@@ -21,6 +21,7 @@
 		Send a profile to a friend or all your friends<br>
 		Compile, modify and display a list of your friends<br>
 		Invite friends to join the site and contribute<br>
+		Like Posts (+1)
 
 	</div>
 	<br>

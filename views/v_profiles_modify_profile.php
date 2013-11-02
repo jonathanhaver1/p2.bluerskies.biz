@@ -24,12 +24,13 @@
 
     <br><br>
     <br><br>
+    <br><br>
+    <br>
 
     <div id="menu_horizontal">
             <ul>
                 <li><a href="/profiles/find_profile">Profiles</a></li>
                 <li><a href="/users/profile">Your Profile</a></li>
-                <li><a href="/profiles/create_profile">Add Profile</a></li>
-                <li><a href="/profiles/modify_profile">Modify Profile</a></li>
+                <li><a href="/posts/users">Follow Users</a></li>
             </ul>
     </div>

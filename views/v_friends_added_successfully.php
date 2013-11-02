@@ -1,15 +1,18 @@
-You just added your friend!
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
-<br><br>
-What would you like to do next?
-<br>
-You may want to take a look at the following:
-<br>
+What do you want to do next?
+
+<div id = "special_features">
+You just added your friend!
+</div>
+
+<div id="menu_horizontal">
 <ul>
-	<li><a href="/friends/add">Add another Friend</a></li>
-	<li><a href="/friends/index">See Your Friends</a></li>
-	<br>
-	<li><a href="/posts/index">Look at Posts</a></li>
-<br>
-	<strong><li><a href="/users/index">Take me to the Main Page</a></strong>
+	<li><a href="/friends/add">Add Friend</a></li>
+	<li><a href="/friends/index">View Friends</a></li>
+	<li><a href="/posts/index">Posts</a></li>
 </ul>
+</div>
