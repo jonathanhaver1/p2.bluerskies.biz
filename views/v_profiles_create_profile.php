@@ -1,5 +1,5 @@
 
-<form id = "create_profile" method='POST' action='/profiles/p_create_profile'>
+<form id = "form_profile" method='POST' action='/profiles/p_create_profile'>
 
 	<span style='align:center'>
 
@@ -19,12 +19,14 @@
     <textarea name='birthyear' id='birthyear' type='text' size='25'></textarea><br><br>
 
     <label for='interests'>Interests: </label><br>
-    <textarea name='interests' id='interests' type='text' size='25'></textarea><br><br>
+    <textarea name='interests' id='interests' type='text' rows='5' cols='30'></textarea><br><br>
 
     <br>
 
 </span>
     <input type='submit' value='Create Profile'>
+
+    <br><br>
 
 </form> 
 

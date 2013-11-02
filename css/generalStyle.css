@@ -60,7 +60,7 @@
 				text-align: center;	
 			}
 
-			#create_profile {
+			#form_profile {
 				position: absolute;
 				top: 50px;
 				left: 290px;
@@ -99,7 +99,7 @@
 			#special_features {
 				position: absolute;
 				top: 150px;
-				left: 350px;
+				left: 300px;
 				font-size: 90%;
 				color: #000099;
 				border: 10px ridge #003399;
@@ -284,7 +284,7 @@
 
 			#menu_horizontal ul {
 				margin-left: 120px;				
-				margin-top: 450px;
+				margin-top: 200px;
 				float:left;
 				width:100%;
 				padding:0;
@@ -293,10 +293,13 @@
 			}
 			#menu_horizontal a {
 				margin-left: 120px;	
-				margin-top: 450px;
+				margin-top: 200px;
+				height:40px;
+				width:60px;
 				float:left;
 				width:6em;
 				text-decoration:none;
+				text-align:center;
 				color:white;
 				background-color:purple;
 				padding:0.2em 0.6em;

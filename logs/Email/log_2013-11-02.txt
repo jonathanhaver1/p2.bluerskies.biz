@@ -1,0 +1,30 @@
+2013-11-02 9:00:13 - INFO --> -------------------------- 
+2013-11-02 9:00:13 - INFO --> Controller/Method: index/index 
+2013-11-02 9:00:13 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-02 9:00:13 - INFO --> To: BluerSkies (jonathanhaverkampf@gmail.com),  
+2013-11-02 9:00:13 - INFO --> CC:  
+2013-11-02 9:00:13 - INFO --> BCC:  
+2013-11-02 9:00:13 - INFO --> Subject: BluerSkies SQL Error 
+2013-11-02 9:00:13 - INFO --> Body: <h2>SQL Error</h2>A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+<h2>Query History</h2><h2>Routed Controller/Method:</h2> index/index<br/><h2>Cookies</h2><pre>Arr 
+2013-11-02 9:00:13 - INFO --> FAILED TO SEND EMAIL 
+2013-11-02 9:00:41 - INFO --> -------------------------- 
+2013-11-02 9:00:41 - INFO --> Controller/Method: index/index 
+2013-11-02 9:00:41 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-02 9:00:41 - INFO --> To: BluerSkies (jonathanhaverkampf@gmail.com),  
+2013-11-02 9:00:41 - INFO --> CC:  
+2013-11-02 9:00:41 - INFO --> BCC:  
+2013-11-02 9:00:41 - INFO --> Subject: BluerSkies SQL Error 
+2013-11-02 9:00:41 - INFO --> Body: <h2>SQL Error</h2>A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+<h2>Query History</h2><h2>Routed Controller/Method:</h2> index/index<br/><h2>Cookies</h2><pre>Arr 
+2013-11-02 9:00:41 - INFO --> FAILED TO SEND EMAIL 
+2013-11-02 9:01:16 - INFO --> -------------------------- 
+2013-11-02 9:01:16 - INFO --> Controller/Method: index/index 
+2013-11-02 9:01:16 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-02 9:01:16 - INFO --> To: BluerSkies (jonathanhaverkampf@gmail.com),  
+2013-11-02 9:01:16 - INFO --> CC:  
+2013-11-02 9:01:16 - INFO --> BCC:  
+2013-11-02 9:01:16 - INFO --> Subject: BluerSkies SQL Error 
+2013-11-02 9:01:16 - INFO --> Body: <h2>SQL Error</h2>A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+<h2>Query History</h2><h2>Routed Controller/Method:</h2> index/index<br/><h2>Cookies</h2><pre>Arr 
+2013-11-02 9:01:16 - INFO --> FAILED TO SEND EMAIL 

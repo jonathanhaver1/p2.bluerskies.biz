@@ -10,22 +10,16 @@
 	Birth Year: <?=$profile['birthyear']?><br>
 </div>
 
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
 
 	<div id="menu_horizontal">
 			<ul>
-				<li><a href="/posts/index">View Posts</a></li>
-				<li><a href="/posts/users">Follow Users</a>
-				<li><a href="/posts/add">Add Post</a></li>
-			</ul>
-			<ul>
-				<li><a href="/profiles/find_profile">Display Profile</a></li>
-				<li><a href="/users/profile">Your Profile</a></li>
-				<li><a href="/profiles/create_profile">Add Profile</a></li>
-				<li><a href="/profiles/modify_profile">Modify Profile</a></li>
-			</ul>
-			<ul>
-				<li><a href="/friends/index">Friends List</a></li>
-				<li><a href="/friends/add">Add Friend</a></li>
+				<li><a href="/profiles/modify_profile">Modify<br>Your Profile</a></li>
+				<li><a href="/friends/add">Add<br>a Friend</a></li>
+				<li><a href="/posts/index">View<br>Posts</a></li>
 			</ul>
 	</div>
 

@@ -1,12 +1,19 @@
-You successfuly created a personal profile.
-<br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 What would you like to do next?
 <br>
-You may want to take a look at the following:
+
+<div id = "special_features">
+You successfuly created a personal profile.
+</div>
+
 <br>
+<div id="menu_horizontal">
 <ul>
 	<li><a href="/posts/add">Add a Post</a></li>
-	<li><a href="/posts/add">See the Index</a></li>
-	<li><a href="/users/list">Take a Look at Who is around</a></li>
-	<li><a href="/users/profile">Check Out Your Profile</a</li>
+	<li><a href="/users/profile">Check Out Your Profile</a></li>
+	<li><a href="/friends/add">Add Friend</a></li>
 </ul>
+</div>
