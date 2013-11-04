@@ -21,6 +21,8 @@
 				top: 200px;
 				left: 200px;
 				color: #000099;
+				width:450px;
+				text-align: center;
 			}
 
 			h2 {
@@ -337,6 +339,8 @@
 				margin-bottom: 25px;
 				padding-left: 10px;
 				padding-right: 10px;
+				padding-top: 10px;
+				padding-bottom: 10px;
 				font-family: cursive;
 				text-align: center;	
 				background-color: #EEEEFF;	

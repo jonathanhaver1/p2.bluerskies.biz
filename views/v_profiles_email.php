@@ -1,29 +1,18 @@
-<h2>View Profiles</h2>
+<h2>Email a Post to a Friend</h2>
 
 <div id ="description">
-    These are the registered users.<br>
-    Just take a look at their profiles.
+        Pick one of your friends below to email the post to.<br>
 </div>
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<form method='POST' action='/posts/p_email/'.<?=$post_id?>>
 
-<article>
+List Friends
+pick friend-id
 
-<?php foreach($user_profiles as $user_profile): ?>
-
-    <!-- Print this user's name -->
-    <?=$user_profile['first_name']?> <?=$user_profile['last_name']?><br>
-
-    <a href='/profiles/p_find_profile/<?=$user_profile['profile_id']?>'>Display this Profile</a><br>
-    <a href="/profiles/email/<?=$user_profile['post_id']?>">Email this Post</a><br>
-
-    <br><br>
-
-<?php endforeach; ?>
+</form> 
 
 
-</article>
 
 <div id="menu_side">
 
@@ -55,7 +44,6 @@
 </div>
 
 
-<div id="comment_box_right">
-	These are the users who have created profiles for themselves.<br>
-	You can view them individually and send them to your friends.
-</div>
+    <div id="comment_box_right">
+            Create your profile. Other users will be able to see it.
+    </div>

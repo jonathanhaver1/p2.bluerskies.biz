@@ -6,19 +6,19 @@
 <body>
 
 <h1>
-	Welcome to <?=APP_NAME?><?php if($user) echo ', '.$user->first_name; ?></h1>
+	Welcome to <?=APP_NAME?><?php if($user) echo ',<br>'.$user->first_name; ?></h1>
 </h1>
 
 <body>
 
 	<div id="special_features">
-		On this site you will be able to build a micro blog.<br>
+		On this site you will be able to contribute in online discussions.<br>
 		<br>
 		<strong>+1</strong> You can also<br><br>
 
-		Edit and display profile info<br>
-		Send a post to a friend or all your friends<br>
-		Send a profile to a friend or all your friends<br>
+		Edit and display profile information<br>
+		Send a post to a friend<br>
+		Send a profile to a friend<br>
 		Compile, modify and display a list of your friends<br>
 		Invite friends to join the site and contribute<br>
 		Like Posts (+1)
@@ -41,7 +41,7 @@
         <span id = "menu_side_header">PROFILES</span>
 
         <ul>
-            <li class='active'><a href="/profiles/find_profile">Display Profile</a></li>
+            <li class='active'><a href="/profiles/find_profile">View Profiles</a></li>
             <li><a href="/users/profile">Your Profile</a></li>
             <li><a href="/profiles/create_profile">Add Profile</a></li>
             <li class='last'><a href="/profiles/modify_profile">Modify Profile</a></li>
