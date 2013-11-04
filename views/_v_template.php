@@ -20,11 +20,6 @@
 		<div id='banner_photo'>
 			<br>
 			<img src="/css/bluerskies.jpg" alt="Bluer Skies" width="800" height="100"><br>
-			<span style="font-size: x-small">© Chrisharvey (
-				<a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a>
-				& <a href="http://www.stockfreeimages.com/">Stock Free Images</a>)
-			</span>
-
 		</div>
 
 	<div id ='menu'>

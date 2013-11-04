@@ -1,5 +1,11 @@
+			/**
+			* generalStyle.css
+			* The general style for the site
+			* p2.bluerskies.biz
+			**/
+
 			article {
-				margin-left: 320px;
+				margin-left: 260px;
 			}
 
 			body {
@@ -12,12 +18,15 @@
 
 			h1 {
 				position: absolute;
-				margin-top: 200px;
-				margin-left: 200px;
+				top: 200px;
+				left: 200px;
 				color: #000099;
 			}
 
 			h2 {
+				position: absolute;
+				top: 180px;
+				left: 340px;
 				font-family: 'Helvetica Neue', helvetica, 'microsoft sans serif', arial, sans-serif;
 			  	font-size: 120%;
 			  	color: #3333FF;
@@ -30,6 +39,24 @@
 				text-align: justify;
 				font-family: arial;
 				width:75%;
+			}
+
+			footer {
+				position: absolute;
+				top: 730px;
+				left: 20px;
+			}
+
+			form {
+				position: absolute;
+				top: 60px;
+				left: 230px;
+				border: 10px ridge #990000;
+				margin-top: 200px;
+				margin-bottom: 25px;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-align: center;	
 			}
 
 			ol {
@@ -48,30 +75,6 @@
 				font-family: arial;
 			}
 
-			form {
-				position: absolute;
-				top: 50px;
-				left: 230px;
-				border: 10px ridge #990000;
-				margin-top: 200px;
-				margin-bottom: 25px;
-				padding-left: 10px;
-				padding-right: 10px;
-				text-align: center;	
-			}
-
-			#form_profile {
-				position: absolute;
-				top: 50px;
-				left: 290px;
-				border: 10px ridge #990000;
-				margin-top: 200px;
-				margin-bottom: 25px;
-				padding-left: 10px;
-				padding-right: 10px;
-				text-align: center;					
-			}
-
 			#banner_bluerskies {
 				position: absolute;
 				top: 20px;
@@ -81,62 +84,54 @@
 				font-style: bold;
 			}
 
-			#comment_box_right {
-				position: absolute;
-				top: 350px;
-				left: 625px;
-				font-size: 90%;
-				color: #000099;
-				border: 10px ridge #003399;
-				width: 150px;
-				padding-left: 10px;
-				padding-right: 10px;
-				font-family: cursive;
-				text-align: center;	
-				background-color: #EEEEFF;
-			}
-
-			#special_features {
-				position: absolute;
-				top: 150px;
-				left: 300px;
-				font-size: 90%;
-				color: #000099;
-				border: 10px ridge #003399;
-				margin-top: 200px;
-				margin-bottom: 25px;
-				padding-left: 10px;
-				padding-right: 10px;
-				font-family: cursive;
-				text-align: center;	
-				background-color: #EEEEFF;	
-			}
-
-			#friends_list {
-				color: black;
-				margin-left: 320px;
-			}
-
 			#banner_photo {
 				position: absolute;
 				margin-top: 35px;
 				margin-bottom: 35px;
 			}
 
-			#profile {
+			#comment_box_right {
 				position: absolute;
-				top: 300px;
-				left: 350px;
+				top: 340px;
+				left: 615px;
+				font-size: 90%;
+				color: #000099;
+				border: 10px ridge #003399;
+				width: 150px;
 				padding-left: 10px;
 				padding-right: 10px;
-				font-family: cursive;	
+				padding-top: 20px;
+				padding-bottom: 20px;
+				font-family: cursive;
+				text-align: center;	
+				background-color: #EEEEFF;
 			}
 
-			#notes {
-				font-size: small;
+			#description {
+				position: absolute;
+				top: 240px;
+				left: 230px;
+				width: 380px;
 				text-align: center;
-				margin-top: 45px;
-				margin-bottom: 20px;
+				font-family: arial;
+				color: #000066;
+			}
+
+			#form_profile {
+				position: absolute;
+				top: 90px;
+				left: 250px;
+				border: 10px ridge #990000;
+				margin-top: 200px;
+				margin-bottom: 25px;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-align: center;					
+			}
+
+			#friends_list {
+				color: black;
+				margin-left: 260px;
 			}
 
 			#menu ul {
@@ -156,10 +151,10 @@
 			#menu a {
 				text-decoration: none;
 				font-family: arial;
-				color: #000033;
+				color: #FFFFFF;
 				display: block;
 				border: 8px blue outset;
-				background-color: #DDDDFF;
+				background-color: #3333FF;
 				width: 5em;
 				float: left;
 				text-align: center;
@@ -211,13 +206,13 @@
 
 			#menu_side {
 				position: absolute;
-    			top: 300px;
-    			left: 100px;
-			  width: 125px;
-			  margin: 0;
-			  padding: 0;
-			  display: block;
-			  float: top;
+    			top: 340px;
+    			left: 50px;
+				width: 125px;
+				margin: 0;
+				padding: 0;
+				display: block;
+				float: top;
 			}
 			#menu_side ul {
 			  display: block;
@@ -263,6 +258,18 @@
 			#menu_side ul li.active a span {
 			  background: transparent url(/css/bg-bubplastic-h-blue.gif) top right no-repeat;
 			}
+			#menu_side_header {
+				font-family: 'Helvetica Neue', helvetica, 'microsoft sans serif', arial, sans-serif;
+			  	font-size: 120%;
+			  	color: #3333FF;
+			}
+
+			#notes {
+				font-size: small;
+				text-align: center;
+				margin-top: 45px;
+				margin-bottom: 20px;
+			}
 
 			#post_content {
 				font-size: 90%;
@@ -274,12 +281,6 @@
 				font-family: cursive;
 				text-align: center;	
 				background-color: #EEEEFF;	
-			}
-			#post_table_name {
-				font:italic bold 12px/30px Georgia, serif;
-				color: #000099;
-				padding-top: 25px;
-				padding-bottom: 10px;	
 			}
 
 			#menu_horizontal ul {
@@ -307,4 +308,36 @@
 			}
 			#menu_horizontal a:hover {background-color:#3333FF;}
 			#menu_horizontal li {display:inline;}
+			}
+
+			#post_table_name {
+				font:italic bold 12px/30px Georgia, serif;
+				color: #3333FF;
+				padding-top: 25px;
+				padding-bottom: 10px;	
+			}
+
+			#profile {
+				position: absolute;
+				top: 300px;
+				left: 350px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-family: cursive;	
+			}
+
+			#special_features {
+				position: absolute;
+				top: 150px;
+				left: 300px;
+				font-size: 90%;
+				color: #000099;
+				border: 10px ridge #003399;
+				margin-top: 200px;
+				margin-bottom: 25px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-family: cursive;
+				text-align: center;	
+				background-color: #EEEEFF;	
 			}
