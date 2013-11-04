@@ -135,6 +135,11 @@
 				color: black;
 				margin-left: 260px;
 			}
+			#login_status {
+				position: absolute;
+				top: 180px;
+				left: 660px;
+			}
 
 			#menu ul {
 				padding-left:40%;
@@ -210,11 +215,12 @@
 				position: absolute;
     			top: 340px;
     			left: 50px;
-				width: 125px;
-				margin: 0;
-				padding: 0;
-				display: block;
-				float: top;
+				border: 8px solid #3333FF;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				width: 130px;
 			}
 			#menu_side ul {
 			  display: block;
@@ -233,8 +239,10 @@
 			#menu_side ul li a {
 			  display: block;
 			  margin: 10;
-			  width: 100%;
-			  padding-left: 15px;
+			  width: 90%;
+			  padding-left: 10px;
+			  padding-top: 5px;
+			  padding-bottom: 5px;
 			  text-transform: uppercase;
 			  font-family: 'Helvetica Neue', helvetica, 'microsoft sans serif', arial, sans-serif;
 			  font-size: 90%;
@@ -280,6 +288,7 @@
 				border-color: #003399;
 				padding-left: 10px;
 				padding-right: 10px;
+				max-width: 150px;
 				font-family: cursive;
 				text-align: center;	
 				background-color: #EEEEFF;	

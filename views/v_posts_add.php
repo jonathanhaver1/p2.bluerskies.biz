@@ -3,9 +3,8 @@
 <form method='POST' action='/posts/p_add' style = "position: absolute; left: 100px">
 
     <br>
-    My new post:
-
-    <label for='content'></label><br>
+    
+    <label for='content'>My new post:</label><br>
     <textarea name='content' id='content' rows='12' cols='45'></textarea>
     <br><br>
 
@@ -16,7 +15,7 @@
 
 <div id="comment_box_right">
     Write your post in this box and click 'Add Post' when you are done.<br>
-    Your friends can read your posts and forward them to their friends.
+    Other memebers can read your posts and forward them to their friends.
 </div>
 
 <div id="menu_horizontal" style = "position: absolute; top: 450px;">

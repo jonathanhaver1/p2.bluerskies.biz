@@ -1,11 +1,11 @@
 <h2>Follow Users</h2>
 
 <div id ="description">
-        You will be able to se ethe posts of the users you follow.<br>
+        You will be able to see the posts of the users you follow.<br>
         You can here make your selection of whom to follow.
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 <?php foreach($users as $user): ?>
 
@@ -18,14 +18,14 @@
 
         <!-- If there exists a connection with this user, show a unfollow link -->
         <?php if(isset($connections[$user['user_id']])): ?>
-        <span id="post_content"><a href='/posts/unfollow/<?=$user['user_id']?>'>Unfollow</a></span>
-        <!-- Otherwise, show the follow link -->
+            <span id="post_content"><a href='/posts/unfollow/<?=$user['user_id']?>'>Unfollow</a></span>
+            <!-- Otherwise, show the follow link -->
         <?php else: ?>
-        <span id="post_content"><a href='/posts/follow/<?=$user['user_id']?>'>Follow</a></span>
+            <span id="post_content"><a href='/posts/follow/<?=$user['user_id']?>'>Follow</a></span>
         <?php endif; ?>
 
-
-        <br><br><br>
+        <br>
+        <a href='/profiles/p_find_profile/<?=$user['user_id']?>'>Display this user's profile</a><br><br>
 
     </article>
 
@@ -45,7 +45,7 @@
         <span id = "menu_side_header">PROFILES</span>
 
         <ul>
-            <li class='active'><a href="/profiles/find_profile">Display Profile</a></li>
+            <li class='active'><a href="/profiles/find_profile">View Profiles</a></li>
             <li><a href="/users/profile">Your Profile</a></li>
             <li><a href="/profiles/create_profile">Add Profile</a></li>
             <li class='last'><a href="/profiles/modify_profile">Modify Profile</a></li>

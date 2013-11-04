@@ -1,0 +1,157 @@
+2013-11-04 9:23:09 - INFO --> -------------------------- 
+2013-11-04 9:23:09 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 9:23:09 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 9:23:09 - INFO --> To:   (John@doe.com),  
+2013-11-04 9:23:09 - INFO --> CC:  
+2013-11-04 9:23:09 - INFO --> BCC:  
+2013-11-04 9:23:09 - INFO --> Subject: Invite 
+2013-11-04 9:23:09 - INFO --> Body: hello 
+2013-11-04 9:23:09 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 9:23:46 - INFO --> -------------------------- 
+2013-11-04 9:23:46 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 9:23:46 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 9:23:46 - INFO --> To:   (John@doe.com),  
+2013-11-04 9:23:46 - INFO --> CC:  
+2013-11-04 9:23:46 - INFO --> BCC:  
+2013-11-04 9:23:46 - INFO --> Subject: Invite 
+2013-11-04 9:23:46 - INFO --> Body: hello 
+2013-11-04 9:23:46 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 9:24:08 - INFO --> -------------------------- 
+2013-11-04 9:24:08 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 9:24:08 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 9:24:08 - INFO --> To:   (John@doe.com),  
+2013-11-04 9:24:08 - INFO --> CC:  
+2013-11-04 9:24:08 - INFO --> BCC:  
+2013-11-04 9:24:08 - INFO --> Subject: Invite 
+2013-11-04 9:24:08 - INFO --> Body: hello 
+2013-11-04 9:24:08 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 9:25:16 - INFO --> -------------------------- 
+2013-11-04 9:25:16 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 9:25:16 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 9:25:16 - INFO --> To: J J (J),  
+2013-11-04 9:25:16 - INFO --> CC:  
+2013-11-04 9:25:16 - INFO --> BCC:  
+2013-11-04 9:25:16 - INFO --> Subject: Invite 
+2013-11-04 9:25:16 - INFO --> Body: hello 
+2013-11-04 9:25:16 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 9:25:49 - INFO --> -------------------------- 
+2013-11-04 9:25:49 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 9:25:49 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 9:25:49 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 9:25:49 - INFO --> CC:  
+2013-11-04 9:25:49 - INFO --> BCC:  
+2013-11-04 9:25:49 - INFO --> Subject: Invite 
+2013-11-04 9:25:49 - INFO --> Body: hello 
+2013-11-04 9:25:49 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 9:26:13 - INFO --> -------------------------- 
+2013-11-04 9:26:13 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 9:26:13 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 9:26:13 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 9:26:13 - INFO --> CC:  
+2013-11-04 9:26:13 - INFO --> BCC:  
+2013-11-04 9:26:13 - INFO --> Subject: Invite 
+2013-11-04 9:26:13 - INFO --> Body: hello 
+2013-11-04 9:26:13 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 9:26:48 - INFO --> -------------------------- 
+2013-11-04 9:26:48 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 9:26:48 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 9:26:48 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 9:26:48 - INFO --> CC:  
+2013-11-04 9:26:48 - INFO --> BCC:  
+2013-11-04 9:26:48 - INFO --> Subject: Invite 
+2013-11-04 9:26:48 - INFO --> Body: hello 
+2013-11-04 9:26:48 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 9:39:39 - INFO --> -------------------------- 
+2013-11-04 9:39:39 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 9:39:39 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 9:39:39 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 9:39:39 - INFO --> CC:  
+2013-11-04 9:39:39 - INFO --> BCC:  
+2013-11-04 9:39:39 - INFO --> Subject: Invite 
+2013-11-04 9:39:39 - INFO --> Body: hello 
+2013-11-04 9:39:39 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 10:11:05 - INFO --> -------------------------- 
+2013-11-04 10:11:05 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 10:11:05 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 10:11:05 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 10:11:05 - INFO --> CC:  
+2013-11-04 10:11:05 - INFO --> BCC:  
+2013-11-04 10:11:05 - INFO --> Subject: Invite 
+2013-11-04 10:11:05 - INFO --> Body: hello 
+2013-11-04 10:11:05 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 10:11:34 - INFO --> -------------------------- 
+2013-11-04 10:11:34 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 10:11:34 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 10:11:34 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 10:11:34 - INFO --> CC:  
+2013-11-04 10:11:34 - INFO --> BCC:  
+2013-11-04 10:11:34 - INFO --> Subject: Invite 
+2013-11-04 10:11:34 - INFO --> Body: hello 
+2013-11-04 10:11:34 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 10:46:35 - INFO --> -------------------------- 
+2013-11-04 10:46:35 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 10:46:35 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 10:46:35 - INFO --> To: Friend5 Friend5 (friendemal),  
+2013-11-04 10:46:35 - INFO --> CC:  
+2013-11-04 10:46:35 - INFO --> BCC:  
+2013-11-04 10:46:35 - INFO --> Subject: Invite 
+2013-11-04 10:46:35 - INFO --> Body: hello 
+2013-11-04 10:46:35 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 11:00:44 - INFO --> -------------------------- 
+2013-11-04 11:00:44 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 11:00:44 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 11:00:44 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 11:00:44 - INFO --> CC:  
+2013-11-04 11:00:44 - INFO --> BCC:  
+2013-11-04 11:00:44 - INFO --> Subject: A post that may interest you 
+2013-11-04 11:00:44 - INFO --> Body:  
+2013-11-04 11:00:44 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 11:01:14 - INFO --> -------------------------- 
+2013-11-04 11:01:14 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 11:01:15 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 11:01:15 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 11:01:15 - INFO --> CC:  
+2013-11-04 11:01:15 - INFO --> BCC:  
+2013-11-04 11:01:15 - INFO --> Subject: A post that may interest you 
+2013-11-04 11:01:15 - INFO --> Body:  
+2013-11-04 11:01:15 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 11:02:04 - INFO --> -------------------------- 
+2013-11-04 11:02:04 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 11:02:04 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 11:02:04 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 11:02:04 - INFO --> CC:  
+2013-11-04 11:02:04 - INFO --> BCC:  
+2013-11-04 11:02:04 - INFO --> Subject: A post that may interest you 
+2013-11-04 11:02:04 - INFO --> Body:  
+2013-11-04 11:02:04 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 11:02:30 - INFO --> -------------------------- 
+2013-11-04 11:02:30 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 11:02:30 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 11:02:30 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 11:02:30 - INFO --> CC:  
+2013-11-04 11:02:30 - INFO --> BCC:  
+2013-11-04 11:02:30 - INFO --> Subject: A post that may interest you 
+2013-11-04 11:02:30 - INFO --> Body:  
+2013-11-04 11:02:30 - INFO --> FAILED TO SEND EMAIL 
+2013-11-04 11:03:02 - INFO --> -------------------------- 
+2013-11-04 11:03:02 - INFO --> Controller/Method: posts/p_email 
+2013-11-04 11:03:02 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-04 11:03:02 - INFO --> To: John Doe (John@doe.com),  
+2013-11-04 11:03:02 - INFO --> CC:  
+2013-11-04 11:03:02 - INFO --> BCC:  
+2013-11-04 11:03:02 - INFO --> Subject: A post that may interest you 
+2013-11-04 11:03:02 - INFO --> Body: Hi John,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-04 11:03:02 - INFO --> FAILED TO SEND EMAIL 

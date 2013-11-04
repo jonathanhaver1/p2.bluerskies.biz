@@ -17,11 +17,11 @@
 		<strong>+1</strong> You can also<br><br>
 
 		Edit and display profile information<br>
-		Send a post to a friend<br>
-		Send a profile to a friend<br>
+		Email a post to a friend<br>
 		Compile, modify and display a list of your friends<br>
 		Invite friends to join the site and contribute<br>
-		Like Posts (+1)
+		Like Posts (+1)<br>
+		See your log in status (upper right corner)
 
 	</div>
 	<br>

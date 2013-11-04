@@ -25,17 +25,24 @@
 	<div id ='menu'>
 
 		<a href='/'>Home</a>
+		<a href='/posts/index'>Posts</a>
+		<a href='/users/profile'>Profile</a>
+		<a href='/friends/index'>Friends</a>
+		<a href='/posts/users'>Users</a>
+		<br><br><br><br><br><br><br><br><br>
 
 		<!-- Menu for users who are logged in -->
 		<?php if($user): ?>
 
-			<a href='/users/logout'>Logout</a>
-			<a href='/users/profile'>Profile</a>
+			<span id = "login_status">You are <strong>LOGGED IN</strong></span>
+			<a href='/users/logout' style = "background-color: #0000FF">Logout</a>
+
 
 			<!-- Menu options for users who are not logged in -->
 		<?php else: ?>
-			<a href='/users/signup'>Sign up</a>
-			<a href='/users/login'>Log in</a>
+			<span id = "login_status">You are <strong>LOGGED OUT</strong></span>
+			<a href='/users/signup' style = "background-color: #0000FF">Sign up</a>
+			<a href='/users/login' style = "background-color: #0000FF">Log in</a>
 		<?php endif; ?>
 	</div>
 

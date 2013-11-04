@@ -6,7 +6,7 @@
 </div>
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 <article>
 
@@ -15,10 +15,8 @@
     <!-- Print this user's name -->
     <?=$user_profile['first_name']?> <?=$user_profile['last_name']?><br>
 
-    <a href='/profiles/p_find_profile/<?=$user_profile['profile_id']?>'>Display this Profile</a><br>
-    <a href="/profiles/email/<?=$user_profile['post_id']?>">Email this Post</a><br>
-
-    <br><br>
+    <a href='/profiles/p_find_profile/<?=$user_profile['profile_id']?>'>Display this user's profile</a><br>
+    ________________________________________<br><br>
 
 <?php endforeach; ?>
 
@@ -38,7 +36,7 @@
         <span id = "menu_side_header">PROFILES</span>
 
         <ul>
-            <li class='active'><a href="/profiles/find_profile">Display Profile</a></li>
+            <li class='active'><a href="/profiles/find_profile">View Profiles</a></li>
             <li><a href="/users/profile">Your Profile</a></li>
             <li><a href="/profiles/create_profile">Add Profile</a></li>
             <li class='last'><a href="/profiles/modify_profile">Modify Profile</a></li>

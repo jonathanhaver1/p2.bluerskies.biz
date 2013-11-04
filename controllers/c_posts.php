@@ -157,64 +157,66 @@ class posts_controller extends base_controller {
 		$this->template->title = "Email the Post to a Friend";
 		$this->template->content->post_id = $post_id;
 
-		#Render template
+		# Prepare list of friends
+		# Build the query
+   		# Query
+    	$q = 'SELECT 
+    			friends.friend_id,
+            	friends.first_name,
+            	friends.last_name,
+            	friends.email
+        		FROM friends';
+
+		# Run the query
+		$friends = DB::instance(DB_NAME)->select_rows($q);
+
+		# Pass data to the View
+		$this->template->content->friends = $friends;
+
+		# Render the View
 		echo $this->template;
 	}
 
-	public function p_email($post_id = null) {
+	public function p_email($friend_id = null, $post_id = null) {
 
-		# Build the query
-   		# Query
+   		# Query name and email address of the friend
     	$q = "SELECT 
-            	email
+            	email,
+            	first_name,
+            	last_name
         		FROM friends
-                WHERE first_name = ".$_POST['first_name']."
-                AND last_name = ".$_POST['last_name'];
+                WHERE friend_id = ".$friend_id;
+		$email = DB::instance(DB_NAME)->select_row($q);
 
-		# Run the query
-		$email = DB::instance(DB_NAME)->select_field($q);
+		# Query the post and the author
+    	$q = 'SELECT 
+            posts.content,
+            posts.created,
+            users.first_name,
+            users.last_name
+        FROM posts
+        INNER JOIN users 
+            ON posts.user_id = users.user_id
+        WHERE posts.post_id = '.$post_id;
+		$post = DB::instance(DB_NAME)->select_row($q);
 
-		if ($friend['email'] == "") {
-			echo "Sorry, but this friend is not in your list";
-			echo "<a href = '/posts/email'> Go Back </a>";
-		}
-
-		# Build a multi-dimension array of recipients of this email
-		$to[] = Array("name" => $_POST['first_name']." ".$_POST['last_name'], "email" => $email);
-
-		# Build a single-dimension array of who this email is coming from
-		# note it's using the constants we set in the configuration above)
+		# Build the Email Array
+		$to[] = Array("name" => $email['first_name']." ".$email['last_name'], "email" => $email['email']);
 		$from = Array("name" => APP_NAME, "email" => APP_EMAIL);
-
-		# Subject
-		$subject = "Invite";
-
-		# You can set the body as just a string of text
-		$body = 	"Hi ".$friend['first_name'].", I would like you to try out my new application BluerSkies at bluerskies.biz.\n
-					There is some really fun stuff to do on it.\n
-					All the very best,\n\n
-					Jonathan";
-
-		# OR, if your email is complex and involves HTML/CSS, you can build the body via a View just like we do in our controllers
-		# $body = View::instance('e_users_welcome');
-
-		# Build multi-dimension arrays of name / email pairs for cc / bcc if you want to 
+		$subject = "A post that may interest you";
+		$body =
+					"Hi ".$email['first_name'].",\n
+					\n
+					I just found this post that may interest you:\n
+					\n
+					Author: ".$post['first_name']." ".$post['last_name']."\n
+					Date: ".$post['created']."\n
+					Post: ".$post['content']."\n";
 		$cc  = "";
 		$bcc = "";
 
-
-		# Build the query
-    	# Query
-   		 $q = 'SELECT 
-            content
-        FROM posts
-        WHERE post_id = '.$post_id;
-
-		# Run the query
-		$post_content = DB::instance(DB_NAME)->select_field($q);
-
-		# With everything set, send the email
-		$email = Email::send($to, $from, $subject, $post_content, true, $cc, $bcc);
+		# Send email
+		$email = Email::send($to, $from, $subject, $body, true, $cc, $bcc);
 	}
 
 		public function like($post_id = null) {

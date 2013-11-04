@@ -50,7 +50,7 @@
         <span id = "menu_side_header">PROFILES</span>
 
         <ul>
-            <li class='active'><a href="/profiles/find_profile">Display Profile</a></li>
+            <li class='active'><a href="/profiles/find_profile">View Profiles</a></li>
             <li><a href="/users/profile">Your Profile</a></li>
             <li><a href="/profiles/create_profile">Add Profile</a></li>
             <li class='last'><a href="/profiles/modify_profile">Modify Profile</a></li>
