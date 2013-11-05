@@ -3,32 +3,27 @@
 	Please login to explore all the great things on this site.<br>
 	If you have not yet signed in, go to Sign in below.
 
-</div>
+</div><br><br><br><br><br>
 
-<br><br><br><br><br>
+<form id = "form_input" method='POST' action='/users/p_login'><br>
 
-<form id = "form_input" method='POST' action='/users/p_login'>
+	Email<br>
+	<input type ='text' name ='email'><br><br>
 
-	<br>Email<br>
-	<input type ='text' name ='email'>
-
-	<br><br>Password<br>
-	<input type ='password' name = 'password'>
-
-	<br><br>
+	Password<br>
+	<input type ='password' name = 'password'><br><br>
 
 	<?php if(isset($error)): ?>
+
 		<div class='error'>
 			Login failed. Please double check your email and password.
-		</div>
-		<br>
+		</div><br>
+
 	<?php endif; ?>
 
 	<input type = 'submit' value = 'LogIn'><br><br>
 
-</form>
-
-<br><br><br><br><br><br>
+</form><br><br><br><br><br><br>
 
 <div id="menu_horizontal">
         <ul>

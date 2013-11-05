@@ -14,6 +14,11 @@ class friends_controller extends base_controller {
 
 	public function add() {
 
+		# Registered users only
+		if (!$this->user) {
+			Router::redirect('/users/login');
+		}
+
 		##Setup view
 		$this->template->content = View::instance('v_friends_add');
 		$this->template->title = "Add a Friend";
@@ -49,12 +54,16 @@ class friends_controller extends base_controller {
 
 		# Query for list of friends
     	$q = '	SELECT 
-    			friends.friend_id,
-            	friends.first_name,
-            	friends.last_name,
-            	friends.modified
+            	friend_id,
+            	first_name,
+            	last_name,
+            	email,
+            	modified,
+            	interests,
+            	interests,
+            	comments
         		FROM friends
-        		WHERE friends.user_id = '.$this->user->user_id;
+        		WHERE user_id = '.$this->user->user_id;
 
 		$friends = DB::instance(DB_NAME)->select_rows($q);
 

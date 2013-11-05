@@ -1,14 +1,10 @@
-<br><br><br>
+<h2>Friend Added</h2>
 
-What do you want to do next?
-
-<div id = "special_features">
+<div id = "warning" style = "width: 190px">
 	You just added your friend!
 </div>
 
-<br><br><br>
-
-<div id="menu_horizontal">
+<div id="menu_horizontal" style = "margin-top: 150px">
 	<ul>
 		<li><a href="/friends/add">Add Another<br>Friend</a></li>
 		<li><a href="/friends/index">View<br>Friends</a></li>

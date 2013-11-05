@@ -46,7 +46,7 @@
 
 			footer {
 				position: absolute;
-				top: 730px;
+				top: 810px;
 				left: 20px;
 			}
 
@@ -161,7 +161,8 @@
 				font-family: arial;
 				color: #FFFFFF;
 				display: block;
-				border: 8px blue outset;
+				border: 8px outset;
+				border-color: #6666FF;
 				background-color: #3333FF;
 				width: 5em;
 				float: left;
@@ -296,7 +297,7 @@
 			}
 
 			#menu_horizontal ul {
-				margin-left: 120px;				
+				margin-left: 100px;				
 				margin-top: 200px;
 				float:left;
 				width:100%;
@@ -305,7 +306,7 @@
 				list-style-type:none;
 			}
 			#menu_horizontal a {
-				margin-left: 120px;	
+				margin-left: 100px;	
 				margin-top: 200px;
 				height:40px;
 				width:60px;

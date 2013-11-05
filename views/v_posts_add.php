@@ -5,8 +5,7 @@
     <span style='align:center'>
 
         <label for='content'>My new post:</label><br>
-
-            <textarea name='content' id='content' type='text' rows='6' cols='45'></textarea><br><br><br>
+        <textarea name='content' id='content' type='text' rows='6' cols='45'></textarea><br><br><br>
 
     </span>
     
@@ -15,13 +14,11 @@
 </form>
 
 
-
-<div id="comment_box_right" style = "top: 250px">
+<div id="comment_box_right" style = "top: 300px">
     Write your post in this box and click 'Add Post' when you are done.<br>
     Other memebers can read your posts and forward them to their friends.
 </div>
 
-<br><br>
 
 <div id="menu_horizontal" style = "position: absolute; top: 500px;">
         <ul>

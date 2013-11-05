@@ -12,7 +12,13 @@
 
     <div id ="friends_list">
 
-        <span id="post_table_name"><?=$friend['first_name']?> <?=$friend['last_name']?></span><br>
+        <span id="post_table_name">
+            <?=$friend['first_name']?> <?=$friend['last_name']?><br>
+            Email: <?=$friend['email']?><br>
+            Interests: <?=$friend['interests']?><br>
+            Comments: <?=$friend['comments']?><br>
+
+        </span><br>
 
         on the list since: 
         <time datetime="<?=Time::display($friend['modified'],'Y-m-d G:i')?>">

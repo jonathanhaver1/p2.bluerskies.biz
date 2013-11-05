@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title><?php if(isset($title)) echo $title; ?></title>
+	<head>
+		<title><?php if(isset($title)) echo $title; ?></title>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="/css/generalStyle.css">
-					
-	<!-- Controller Specific JS/CSS -->
-	<?php if(isset($client_files_head)) echo $client_files_head; ?>
-	
-</head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="/css/generalStyle.css">
+						
+		<!-- Controller Specific JS/CSS -->
+		<?php if(isset($client_files_head)) echo $client_files_head; ?>
+		
+	</head>
 
-<body>	
+	<body>	
 
-	<div id="banner_bluerskies">
-		Bluer Skies
-	</div>
-
-		<div id='banner_photo'>
-			<br>
-			<img src="/css/bluerskies.jpg" alt="Bluer Skies" width="800" height="100"><br>
+		<div id="banner_bluerskies">
+			Bluer Skies
 		</div>
 
-	<div id ='menu'>
+			<div id='banner_photo'><br>
+				<img src="/css/bluerskies.jpg" alt="Bluer Skies" width="800" height="100"><br>
+			</div>
 
-		<a href='/'>Home</a>
-		<a href='/posts/index'>Posts</a>
-		<a href='/users/profile'>Profile</a>
-		<a href='/friends/index'>Friends</a>
-		<a href='/posts/users'>Users</a>
-		<br><br><br><br><br><br><br><br><br>
+		<div id ='menu'>
 
-		<!-- Menu for users who are logged in -->
-		<?php if($user): ?>
+			<a href='/'>Home</a>
+			<a href='/posts/index'>Posts</a>
+			<a href='/users/profile'>Profile</a>
+			<a href='/friends/index'>Friends</a>
+			<a href='/posts/users'>Users</a>
+			<br><br><br><br><br><br><br><br><br>
 
-			<span id = "login_status">You are <strong>LOGGED IN</strong></span>
-			<a href='/users/logout' style = "background-color: #0000FF">Logout</a>
+			<!-- Menu for users who are logged in -->
+			<?php if($user): ?>
 
-
-			<!-- Menu options for users who are not logged in -->
-		<?php else: ?>
-			<span id = "login_status">You are <strong>LOGGED OUT</strong></span>
-			<a href='/users/signup' style = "background-color: #0000FF">Sign up</a>
-			<a href='/users/login' style = "background-color: #0000FF">Log in</a>
-		<?php endif; ?>
-	</div>
+				<span id = "login_status">You are <strong>LOGGED IN</strong></span>
+				<a href='/users/logout'>Logout</a>
 
 
+				<!-- Menu options for users who are not logged in -->
+			<?php else: ?>
 
-	<?php if(isset($content)) echo $content; ?>
+				<span id = "login_status">You are <strong>LOGGED OUT</strong></span>
+				<a href='/users/signup'>Sign up</a>
+				<a href='/users/login'>Log in</a>
 
-</body>
+			<?php endif; ?>
+
+		</div>
+
+		<?php if(isset($content)) echo $content; ?>
+
+	</body>
 </html>

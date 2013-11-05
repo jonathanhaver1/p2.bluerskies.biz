@@ -106,3 +106,367 @@
 					Post: hello
  
 2013-11-05 6:22:05 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 9:50:23 - INFO --> -------------------------- 
+2013-11-05 9:50:23 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 9:50:23 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 9:50:23 - INFO --> To: Friend10 Friend10last (Friend10last),  
+2013-11-05 9:50:23 - INFO --> CC:  
+2013-11-05 9:50:23 - INFO --> BCC:  
+2013-11-05 9:50:23 - INFO --> Subject: Invite 
+2013-11-05 9:50:23 - INFO --> Body: Hi Friend10, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 9:50:23 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 9:52:52 - INFO --> -------------------------- 
+2013-11-05 9:52:52 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 9:52:52 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 9:52:52 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 9:52:52 - INFO --> CC:  
+2013-11-05 9:52:52 - INFO --> BCC:  
+2013-11-05 9:52:52 - INFO --> Subject: Invite 
+2013-11-05 9:52:52 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 9:52:52 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 9:53:20 - INFO --> -------------------------- 
+2013-11-05 9:53:20 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 9:53:20 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 9:53:20 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 9:53:20 - INFO --> CC:  
+2013-11-05 9:53:20 - INFO --> BCC:  
+2013-11-05 9:53:20 - INFO --> Subject: Invite 
+2013-11-05 9:53:20 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 9:53:20 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 9:53:36 - INFO --> -------------------------- 
+2013-11-05 9:53:36 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 9:53:36 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 9:53:36 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 9:53:36 - INFO --> CC:  
+2013-11-05 9:53:36 - INFO --> BCC:  
+2013-11-05 9:53:36 - INFO --> Subject: Invite 
+2013-11-05 9:53:36 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 9:53:36 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 9:53:51 - INFO --> -------------------------- 
+2013-11-05 9:53:51 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 9:53:51 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 9:53:51 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 9:53:51 - INFO --> CC:  
+2013-11-05 9:53:51 - INFO --> BCC:  
+2013-11-05 9:53:51 - INFO --> Subject: Invite 
+2013-11-05 9:53:51 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 9:53:51 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 9:54:01 - INFO --> -------------------------- 
+2013-11-05 9:54:01 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 9:54:01 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 9:54:01 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 9:54:01 - INFO --> CC:  
+2013-11-05 9:54:01 - INFO --> BCC:  
+2013-11-05 9:54:01 - INFO --> Subject: Invite 
+2013-11-05 9:54:01 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 9:54:01 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 9:54:10 - INFO --> -------------------------- 
+2013-11-05 9:54:10 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 9:54:10 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 9:54:10 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 9:54:10 - INFO --> CC:  
+2013-11-05 9:54:10 - INFO --> BCC:  
+2013-11-05 9:54:10 - INFO --> Subject: Invite 
+2013-11-05 9:54:10 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 9:54:10 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 9:54:42 - INFO --> -------------------------- 
+2013-11-05 9:54:42 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 9:54:42 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 9:54:42 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 9:54:42 - INFO --> CC:  
+2013-11-05 9:54:42 - INFO --> BCC:  
+2013-11-05 9:54:42 - INFO --> Subject: Invite 
+2013-11-05 9:54:42 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 9:54:42 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:04:30 - INFO --> -------------------------- 
+2013-11-05 10:04:30 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:04:30 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:04:30 - INFO --> To: hello hello (hello),  
+2013-11-05 10:04:30 - INFO --> CC:  
+2013-11-05 10:04:30 - INFO --> BCC:  
+2013-11-05 10:04:30 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:04:30 - INFO --> Body: Hi hello,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:04:30 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:06:22 - INFO --> -------------------------- 
+2013-11-05 10:06:22 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:06:22 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:06:22 - INFO --> To: Friend10 Friend10last (Friend10email),  
+2013-11-05 10:06:22 - INFO --> CC:  
+2013-11-05 10:06:22 - INFO --> BCC:  
+2013-11-05 10:06:22 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:06:22 - INFO --> Body: Hi Friend10,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:06:22 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:06:34 - INFO --> -------------------------- 
+2013-11-05 10:06:34 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:06:34 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:06:34 - INFO --> To: Friend10 Friend10last (Friend10email),  
+2013-11-05 10:06:34 - INFO --> CC:  
+2013-11-05 10:06:34 - INFO --> BCC:  
+2013-11-05 10:06:34 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:06:34 - INFO --> Body: Hi Friend10,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:06:34 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:06:52 - INFO --> -------------------------- 
+2013-11-05 10:06:52 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:06:52 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:06:52 - INFO --> To: Friend10 Friend10last (Friend10email),  
+2013-11-05 10:06:52 - INFO --> CC:  
+2013-11-05 10:06:52 - INFO --> BCC:  
+2013-11-05 10:06:52 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:06:52 - INFO --> Body: Hi Friend10,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:06:52 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:07:02 - INFO --> -------------------------- 
+2013-11-05 10:07:02 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:07:02 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:07:02 - INFO --> To: Friend10 Friend10last (Friend10email),  
+2013-11-05 10:07:02 - INFO --> CC:  
+2013-11-05 10:07:02 - INFO --> BCC:  
+2013-11-05 10:07:02 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:07:02 - INFO --> Body: Hi Friend10,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:07:02 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:07:50 - INFO --> -------------------------- 
+2013-11-05 10:07:50 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:07:50 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:07:50 - INFO --> To: Friend10 Friend10last (Friend10email),  
+2013-11-05 10:07:50 - INFO --> CC:  
+2013-11-05 10:07:50 - INFO --> BCC:  
+2013-11-05 10:07:50 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:07:50 - INFO --> Body: Hi Friend10,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:07:50 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:07:53 - INFO --> -------------------------- 
+2013-11-05 10:07:53 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:07:53 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:07:53 - INFO --> To: Friend10 Friend10last (Friend10email),  
+2013-11-05 10:07:53 - INFO --> CC:  
+2013-11-05 10:07:53 - INFO --> BCC:  
+2013-11-05 10:07:53 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:07:53 - INFO --> Body: Hi Friend10,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:07:53 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:07:53 - INFO --> -------------------------- 
+2013-11-05 10:07:53 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:07:53 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:07:53 - INFO --> To: Friend10 Friend10last (Friend10email),  
+2013-11-05 10:07:53 - INFO --> CC:  
+2013-11-05 10:07:53 - INFO --> BCC:  
+2013-11-05 10:07:53 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:07:53 - INFO --> Body: Hi Friend10,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:07:53 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:08:02 - INFO --> -------------------------- 
+2013-11-05 10:08:02 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:08:02 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:08:02 - INFO --> To: Friend10 Friend10last (Friend10email),  
+2013-11-05 10:08:02 - INFO --> CC:  
+2013-11-05 10:08:02 - INFO --> BCC:  
+2013-11-05 10:08:02 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:08:02 - INFO --> Body: Hi Friend10,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:08:02 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:09:01 - INFO --> -------------------------- 
+2013-11-05 10:09:01 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 10:09:01 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:09:01 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 10:09:01 - INFO --> CC:  
+2013-11-05 10:09:01 - INFO --> BCC:  
+2013-11-05 10:09:01 - INFO --> Subject: Invite 
+2013-11-05 10:09:01 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					Jane 
+2013-11-05 10:09:01 - INFO --> FAILED TO SEND EMAIL 
+2013-11-05 10:09:17 - INFO --> -------------------------- 
+2013-11-05 10:09:17 - INFO --> Controller/Method: posts/p_email 
+2013-11-05 10:09:17 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 10:09:17 - INFO --> To: hello hello (hello),  
+2013-11-05 10:09:17 - INFO --> CC:  
+2013-11-05 10:09:17 - INFO --> BCC:  
+2013-11-05 10:09:17 - INFO --> Subject: A post that may interest you 
+2013-11-05 10:09:17 - INFO --> Body: Hi hello,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-05 10:09:17 - INFO --> FAILED TO SEND EMAIL 

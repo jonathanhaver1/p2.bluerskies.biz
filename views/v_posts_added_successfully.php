@@ -1,13 +1,9 @@
 
-<br><br><br><br>
-
-What would you like to do next?
-
-<div id = "special_features">
-You shave successfully added a post.
+<div id = "warning">
+	You shave successfully added a post.
 </div>
 
-<div id="menu_horizontal">
+<div id="menu_horizontal" style ="margin-top: 150px">
 <ul>
 	<li><a href="/posts/add">Add<br>Another Post</a></li>
 	<li><a href="/posts/index">See<br>the Index</a></li>
