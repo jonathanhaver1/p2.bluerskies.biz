@@ -23,6 +23,7 @@
 				color: #000099;
 				width:450px;
 				text-align: center;
+				font-family: cursive;
 			}
 
 			h2 {
@@ -53,7 +54,7 @@
 				position: absolute;
 				top: 60px;
 				left: 230px;
-				border: 10px ridge #990000;
+				border: 10px ridge #660066;
 				margin-top: 200px;
 				margin-bottom: 25px;
 				padding-left: 10px;
@@ -123,7 +124,7 @@
 				position: absolute;
 				top: 90px;
 				left: 250px;
-				border: 10px ridge #990000;
+				border: 10px ridge #660066;
 				margin-top: 200px;
 				margin-bottom: 25px;
 				padding-left: 10px;
@@ -330,10 +331,12 @@
 
 			#profile {
 				position: absolute;
-				top: 300px;
-				left: 350px;
-				padding-left: 10px;
-				padding-right: 10px;
+				border: 10px ridge #000099;
+				top: 350px;
+				left: 300px;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 15px;
 				font-family: cursive;	
 			}
 
@@ -341,15 +344,15 @@
 				position: absolute;
 				top: 150px;
 				left: 300px;
+				width: 470px;
 				font-size: 90%;
 				color: #000099;
 				border: 10px ridge #003399;
 				margin-top: 200px;
-				margin-bottom: 25px;
 				padding-left: 10px;
 				padding-right: 10px;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				padding-top: 15px;
+				padding-bottom: 15px;
 				font-family: cursive;
 				text-align: center;	
 				background-color: #EEEEFF;	

@@ -56,7 +56,8 @@ class friends_controller extends base_controller {
             	friends.first_name,
             	friends.last_name,
             	friends.modified
-        		FROM friends';
+        		FROM friends
+        		WHERE friends.user_id = '.$this->user->user_id;
 
 		# Run the query
 		$friends = DB::instance(DB_NAME)->select_rows($q);

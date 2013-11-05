@@ -1,0 +1,16 @@
+2013-11-05 3:20:14 - INFO --> -------------------------- 
+2013-11-05 3:20:14 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-05 3:20:15 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-05 3:20:15 - INFO --> To: JanesFriend JanesFriendlast (JanesFriendlast),  
+2013-11-05 3:20:15 - INFO --> CC:  
+2013-11-05 3:20:15 - INFO --> BCC:  
+2013-11-05 3:20:15 - INFO --> Subject: Invite 
+2013-11-05 3:20:15 - INFO --> Body: Hi JanesFriend, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					All the very best,
+
+
+					Jonathan 
+2013-11-05 3:20:15 - INFO --> FAILED TO SEND EMAIL 

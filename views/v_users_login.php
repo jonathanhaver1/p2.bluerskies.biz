@@ -34,8 +34,7 @@ If you have not yet signed in, go to Sign in below.
 
 </form>
 
-    <br><br>
- <br><br> <br><br> <br><br> <br><br> <br><br>
+ <br><br> <br><br> <br><br>
     <div id="menu_horizontal">
             <ul>
                 <li><a href="/users/signup">Signup</a></li>

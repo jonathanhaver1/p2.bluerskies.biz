@@ -19,12 +19,12 @@ class profiles_controller extends base_controller {
 		echo $this->template;
 	}
 
-		public function p_create_profile() {
+	public function p_create_profile() {
 
-		$user_id = $this->user->user_id;
+		$_POST['user_id'] = $this->user->user_id;
 
 		#insert this user into the database
-		DB::instance(DB_NAME)->update("user_profiles", $_POST, "WHERE user_id = ".$user_id." ");
+		DB::instance(DB_NAME)->insert("user_profiles", $_POST);
 
 		##Setup view
 		$this->template->content = View::instance('v_profiles_successful_creation');
@@ -51,7 +51,7 @@ class profiles_controller extends base_controller {
 
 	public function p_modify_profile() {
 
-		$user_id = $this->user->user_id;
+		$_POST['user_id'] = $this->user->user_id;
 		#insert this user into the database
 		DB::instance(DB_NAME)->update("user_profiles", $_POST, "WHERE user_id = ".$this->user->user_id);
 
@@ -63,6 +63,7 @@ class profiles_controller extends base_controller {
 		echo $this->template;
 	}
 
+/**
 	public function display_profile() {
 
 		# if not logged in -> redirect to the login page
@@ -98,6 +99,7 @@ class profiles_controller extends base_controller {
 		# Render the View
 		echo $this->template;
 	}
+**/
 
 	public function find_profile() {
 		# if not logged in -> redirect to the login page
@@ -109,7 +111,7 @@ class profiles_controller extends base_controller {
 		$this->template->content = View::instance("v_profiles_find_profile");
 		$this->template->title   = "Find a Profile";
 
-		# Build the query to get all the users
+		# Query for Profiles
 		$q = "	SELECT
 					user_profiles.profile_id,
 					users.first_name,
@@ -129,38 +131,56 @@ class profiles_controller extends base_controller {
 		echo $this->template;
 	}
 
-
-	public function p_find_profile($profile_id = null) {
+	public function p_find_profile($user_id = null) {
 		# if not logged in -> redirect to the login page
 		if (!$this->user) {
 			Router::redirect('/users/login');
 		}
 
-			# Build the query
-		$q = 'SELECT 
-				user_profiles.city,
-				user_profiles.country,
-				user_profiles.interests,
-				user_profiles.birthyear,
-				users.first_name,
-				users.last_name
-				FROM user_profiles
-				INNER JOIN users 
-				ON users.user_id = user_profiles.user_id
-				WHERE profile_id = '.$profile_id;
+			# Query whehther Profile exists
+			$q = "	SELECT profile_id
+					FROM user_profiles
+					WHERE user_id = ".$user_id;
+			$profile_exists = DB::instance(DB_NAME)->select_field($q);
 
-		# Run the query
-		$profile = DB::instance(DB_NAME)->select_row($q);
+			# If the user does not have a profile display 'Sorry No Profile'
+			if (!$profile_exists) {
+			#Setup view
+				$this->template->content = View::instance('v_profiles_no_profile');
+				$this->template->title = "No Profile";
 
-		#Setup view
-		$this->template->content = View::instance('v_users_profile');
-		$this->template->title = "Profile of ".$profile['first_name'];
+				# Render the View
+				echo $this->template;
+			} else {
+			# if the user has a profile
 
-		# Pass data to the View
-		$this->template->content->profile = $profile;
-		
-		# Render the View
-		echo $this->template;
+			# Query for Profiles
+			$q = "	SELECT
+						user_profiles.city,
+						user_profiles.country,
+						user_profiles.interests,
+						user_profiles.birthyear,
+						users.first_name,
+						users.last_name
+					FROM user_profiles
+					INNER JOIN users 
+					ON users.user_id = user_profiles.user_id
+					WHERE user_profiles.user_id = ".$user_id;
+
+			# Execute the query to get all the users. 
+			# Store the result array in the variable $users
+			$profile = DB::instance(DB_NAME)->select_row($q);
+
+			#Setup view
+			$this->template->content = View::instance('v_profiles_display');
+			$this->template->title = "Profile of ".$profile['first_name'];
+
+			# Pass data to the View
+			$this->template->content->profile = $profile;
+			
+			# Render the View
+			echo $this->template;
+		}
 	}
 }
 

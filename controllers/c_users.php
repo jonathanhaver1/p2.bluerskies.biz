@@ -113,27 +113,48 @@ public function profile() {
 		Router::redirect('/users/login');
 	}
 
-	# if logged in -> Setup view
-	$this->template->content = View::instance('v_users_profile');
-	$this->template->title = "Profile of ".$this->user->first_name;
+	# Query whehther Profile exists
+	$q = "	SELECT profile_id
+			FROM user_profiles
+			WHERE user_id = ".$this->user->user_id;
+	$profile_exists = DB::instance(DB_NAME)->select_field($q);
+
+	# If the user does not have a profile display 'Sorry No Profile'
+	if (!$profile_exists) {
+			$this->template->content = View::instance('v_users_no_profile');
+			$this->template->title = "No Profile";
+
+			# Render the View
+			echo $this->template;
+		} else {
+			# if the user has a profile
+
+		# if logged in -> Setup view
+		$this->template->content = View::instance('v_profiles_display');
+		$this->template->title = "Your Profile";
 
 		# Build the query
-	$q = 'SELECT 
-			city,
-			country,
-			interests,
-			birthyear
-		FROM user_profiles
-		WHERE user_id = '.$this->user->user_id;
+		$q = '	SELECT 
+					user_profiles.city,
+					user_profiles.country,
+					user_profiles.interests,
+					user_profiles.birthyear,
+					users.first_name,
+					users.last_name
+				FROM user_profiles
+				JOIN users ON
+					user_profiles.user_id = users.user_id 
+				WHERE user_profiles.user_id = '.$this->user->user_id;
 
-	# Run the query
-	$profile = DB::instance(DB_NAME)->select_row($q);
+		# Run the query
+		$profile = DB::instance(DB_NAME)->select_row($q);
 
-	# Pass data to the View
-	$this->template->content->profile = $profile;
+		# Pass data to the View
+		$this->template->content->profile = $profile;
 	
-	# Render the View
-	echo $this->template;
+		# Render the View
+		echo $this->template;
+		}
 	}
 }
 

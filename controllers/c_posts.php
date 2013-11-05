@@ -16,14 +16,13 @@ class posts_controller extends base_controller {
 		if (!$this->user) {
 		Router::redirect('/users/login'); }
 
-	##Setup view
-	$this->template->content = View::instance('v_posts_add');
-	$this->template->title = "Compose a Post";
+		##Setup view
+		$this->template->content = View::instance('v_posts_add');
+		$this->template->title = "Compose a Post";
 
-	#Render template
-	echo $this->template;
-
-	}
+		#Render template
+		echo $this->template;
+		}
 
 	public function p_add() {
 
@@ -34,16 +33,13 @@ class posts_controller extends base_controller {
 		$_POST['created']  = Time::now();
 		$_POST['modified'] = Time::now();
 
-		# Insert
-		# Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
+		# Insert into database
 		DB::instance(DB_NAME)->insert('posts', $_POST);
 
-		# Quick and dirty feedback
-
-			##Setup view
-			$this->template->content = View::instance('v_posts_added_successfully');
-			$this->template->title = "Success";
-			echo $this->template;
+		# Setup view
+		$this->template->content = View::instance('v_posts_added_successfully');
+		$this->template->title = "Success";
+		echo $this->template;
 	}
 
 	public function index() {
@@ -56,31 +52,27 @@ class posts_controller extends base_controller {
 		$this->template->content = View::instance('v_posts_index');
 		$this->template->title   = "Posts";
 
-		# Build the query
-    	# Query
-    	$q = 'SELECT 
-            posts.post_id,
-            posts.content,
-            posts.created,
-            posts.likes,
-            posts.user_id AS post_user_id,
-            users_users.user_id AS follower_id,
-            users.first_name,
-            users.last_name
-        FROM posts
-        INNER JOIN users_users 
-            ON posts.user_id = users_users.user_id_followed
-        INNER JOIN users 
-            ON posts.user_id = users.user_id
-        WHERE users_users.user_id = '.$this->user->user_id;
+    	# Query the database for post information
+    	$q = '	SELECT 
+		            posts.post_id,
+		            posts.content,
+		            posts.created,
+		            posts.likes,
+		            posts.user_id AS post_user_id,
+		            users_users.user_id AS follower_id,
+		            users.first_name,
+		            users.last_name
+		        FROM posts
+		        INNER JOIN users_users 
+		            ON posts.user_id = users_users.user_id_followed
+		        INNER JOIN users 
+		            ON posts.user_id = users.user_id
+		        WHERE users_users.user_id = '.$this->user->user_id;
 
-		# Run the query
 		$posts = DB::instance(DB_NAME)->select_rows($q);
 
-		# Pass data to the View
+		# Pass data to the View and render the View
 		$this->template->content->posts = $posts;
-
-		# Render the View
 		echo $this->template;
 	}
 
@@ -95,23 +87,18 @@ class posts_controller extends base_controller {
 		$this->template->content = View::instance("v_posts_users");
 		$this->template->title   = "Users";
 
-		# Build the query to get all the users
+		# Query for all the users
 		$q = "	SELECT *
 				FROM users";
 
-		# Execute the query to get all the users. 
-		# Store the result array in the variable $users
 		$users = DB::instance(DB_NAME)->select_rows($q);
 
-		# Build the query to figure out what connections does this user already have? 
-		# I.e. who are they following
+		# Query for connections
 		$q = "	SELECT * 
 				FROM users_users
 				WHERE user_id = ".$this->user->user_id;
 
-		# Execute this query with the select_array method
 		# select_array will return our results in an array and use the "users_id_followed" field as the index.
-		# This will come in handy when we get to the view
 		# Store our results (an array) in the variable $connections
 		$connections = DB::instance(DB_NAME)->select_array($q, 'user_id_followed');
 
@@ -127,12 +114,12 @@ class posts_controller extends base_controller {
 
 		# Prepare the data array to be inserted
 		$data = Array(
-		"created" => Time::now(),
-		"user_id" => $this->user->user_id,
-		"user_id_followed" => $user_id_followed
-		);
+						"created" => Time::now(),
+						"user_id" => $this->user->user_id,
+						"user_id_followed" => $user_id_followed
+				);
 
-		# Do the insert
+		# Insert into database
 		DB::instance(DB_NAME)->insert('users_users', $data);
 
 		# Send them back
@@ -157,23 +144,20 @@ class posts_controller extends base_controller {
 		$this->template->title = "Email the Post to a Friend";
 		$this->template->content->post_id = $post_id;
 
-		# Prepare list of friends
-		# Build the query
-   		# Query
+   		# Query for list of friends
     	$q = 'SELECT 
     			friends.friend_id,
             	friends.first_name,
             	friends.last_name,
             	friends.email
-        		FROM friends';
+        		FROM friends
+        		WHERE friends.user_id = '.$this->user->user_id;
 
-		# Run the query
 		$friends = DB::instance(DB_NAME)->select_rows($q);
 
-		# Pass data to the View
+		# Pass data to the View and render it
 		$this->template->content->friends = $friends;
 
-		# Render the View
 		echo $this->template;
 	}
 

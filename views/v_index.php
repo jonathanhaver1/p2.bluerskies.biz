@@ -12,8 +12,12 @@
 <body>
 
 	<div id="special_features">
-		On this site you will be able to contribute in online discussions.<br>
-		<br>
+		On this site you will be able to contribute to online discussions.<br>
+		<strong>Members (Users)</strong> can participate in the discussion
+		and have individual profiles which can be viewed by other members.<br>
+		Every member can have a group of <strong>friends</strong> who can receive
+		copies of the posts.
+		<br><br>
 		<strong>+1</strong> You can also<br><br>
 
 		Edit and display profile information<br>

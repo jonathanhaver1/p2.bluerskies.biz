@@ -1,0 +1,17 @@
+<br><br><br>
+<br><br><br>
+<br><br><br><br>
+
+
+<br>
+<div id="menu_horizontal">
+<ul>
+	<li><a href="/index">Home</a></li>
+	<li><a href="/profiles/index">See<br>User Profiles</a></li>
+	<li><a href="/users/profile">See<br>Your Profile</a></li>
+</ul>
+</div>
+
+<div id = "special_features">
+	Sorry, the user has not set up a profile yet.
+</div>
