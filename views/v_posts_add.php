@@ -1,27 +1,22 @@
 <h2>Add a New Post</h2>
 
-<form style = 'position: absolute; left: 100px' id = "form_profile" method='POST' action='/posts/p_add'>
+<form style = 'position: absolute; left: 100px;' id = "form_profile" method='POST' action='/posts/p_add'>
 
     <span style='align:center'>
 
-    <label for='content'>My new post:</label><br>
+        <label for='content'>My new post:</label><br>
 
-        <textarea name='content' id='content' type='text' rows='6' cols='45'></textarea>
-    <br><br>
-
-        <br>
+            <textarea name='content' id='content' type='text' rows='6' cols='45'></textarea><br><br><br>
 
     </span>
     
-    <input type='submit' value='Create Profile'>
-
-    <br><br>
+    <input type='submit' value='Create Profile'><br><br>
 
 </form>
 
 
 
-<div id="comment_box_right">
+<div id="comment_box_right" style = "top: 250px">
     Write your post in this box and click 'Add Post' when you are done.<br>
     Other memebers can read your posts and forward them to their friends.
 </div>

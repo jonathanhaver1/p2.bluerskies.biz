@@ -24,8 +24,13 @@
 
         <span id="post_content"><?=$post['content']?></span><br><br>
 
-        --><a href="/posts/email/<?=$post['post_id']?>">Email this Post</a><br>
-        --><a href="/posts/like/<?=$post['post_id']?>">Like +1</a><br>
+        <form action="/posts/email/<?=$post['post_id']?>">
+            <input type="submit" value="Email this Post">
+        </form>
+
+        <form action="/posts/like/<?=$post['post_id']?>">
+            <input type="submit" value="Like +1">
+        </form>
 
         ________________________________________<br><br>
 

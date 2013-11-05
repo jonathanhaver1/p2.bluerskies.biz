@@ -19,9 +19,9 @@
                 <?=Time::display($friend['modified'])?>
         </time><br>
 
-        <span id="post_content"><a href='/friends/email_invitation/<?=$friend['friend_id']?>'>Email this Friend an Invitation</a></span>
-
-        <br><br>
+        <form action="/friends/email_invitation/<?=$friend['friend_id']?>">
+            <input type="submit" value="Email this Friend an Invitation">
+        </form><br><br>
 
     </div>
 

@@ -10,7 +10,10 @@
 	Birth Year: <?=$profile['birthyear']?><br>
 </div>
 
-<br><br><br><br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
 
 	<div id="menu_horizontal">
 			<ul>

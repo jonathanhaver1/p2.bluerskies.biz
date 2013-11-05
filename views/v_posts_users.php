@@ -15,17 +15,19 @@
         <span id="post_table_name"><?=$user['first_name']?> <?=$user['last_name']?></span>
         <br>
 
+        <form action="/profiles/p_find_profile/<?=$user['user_id']?>">
+            <input type="submit" value="Display Profile">
+        </form><br>
 
         <!-- If there exists a connection with this user, show a unfollow link -->
         <?php if(isset($connections[$user['user_id']])): ?>
             <span id="post_content"><a href='/posts/unfollow/<?=$user['user_id']?>'>Unfollow</a></span>
-            <!-- Otherwise, show the follow link -->
+        <!-- Otherwise, show the follow link -->
         <?php else: ?>
             <span id="post_content"><a href='/posts/follow/<?=$user['user_id']?>'>Follow</a></span>
         <?php endif; ?>
 
-        <br>
-        <a href='/profiles/p_find_profile/<?=$user['user_id']?>'>Display this user's profile</a><br><br>
+        <br><br><br>
 
     </article>
 

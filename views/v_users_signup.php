@@ -8,7 +8,7 @@ If you have not yet signed in, go to Sign in below.
 
 <br><br><br><br><br>
 
-<form method = 'POST' action='/users/p_signup'>
+<form id = "form_input" method = 'POST' action='/users/p_signup'>
 
 	First Name<br>
 	<input type = 'text' name = 'first_name'>

@@ -50,18 +50,6 @@
 				left: 20px;
 			}
 
-			form {
-				position: absolute;
-				top: 60px;
-				left: 230px;
-				border: 10px ridge #660066;
-				margin-top: 200px;
-				margin-bottom: 25px;
-				padding-left: 10px;
-				padding-right: 10px;
-				text-align: center;	
-			}
-
 			ol {
 				margin-top: 15px;
 				margin-bottom: 15px;
@@ -118,6 +106,18 @@
 				text-align: center;
 				font-family: arial;
 				color: #000066;
+			}
+
+			#form_input {
+				position: absolute;
+				top: 60px;
+				left: 230px;
+				border: 10px ridge #660066;
+				margin-top: 200px;
+				margin-bottom: 25px;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-align: center;	
 			}
 
 			#form_profile {
@@ -333,10 +333,11 @@
 				position: absolute;
 				border: 10px ridge #000099;
 				top: 350px;
-				left: 300px;
+				left: 290px;
 				padding-left: 20px;
 				padding-right: 20px;
 				padding-bottom: 15px;
+				width: 230px;
 				font-family: cursive;	
 			}
 
@@ -345,6 +346,24 @@
 				top: 150px;
 				left: 300px;
 				width: 470px;
+				font-size: 90%;
+				color: #000099;
+				border: 10px ridge #003399;
+				margin-top: 200px;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				font-family: cursive;
+				text-align: center;	
+				background-color: #EEEEFF;	
+			}
+
+			#warning {
+				position: absolute;
+				top: 150px;
+				left: 300px;
+				width: 270px;
 				font-size: 90%;
 				color: #000099;
 				border: 10px ridge #003399;

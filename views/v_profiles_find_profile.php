@@ -15,8 +15,9 @@
     <!-- Print this user's name -->
     <?=$user_profile['first_name']?> <?=$user_profile['last_name']?><br>
 
-    <a href='/profiles/p_find_profile/<?=$user_profile['profile_id']?>'>Display this user's profile</a><br>
-    ________________________________________<br><br>
+    <form action="/profiles/p_find_profile/<?=$user_profile['profile_id']?>">
+        <input type="submit" value="Display Profile">
+    </form><br><br>
 
 <?php endforeach; ?>
 

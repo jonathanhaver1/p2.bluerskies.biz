@@ -201,6 +201,13 @@ class posts_controller extends base_controller {
 
 		# Send email
 		$email = Email::send($to, $from, $subject, $body, true, $cc, $bcc);
+
+		##Setup view
+		$this->template->content = View::instance('v_posts_emailed_successfully');
+		$this->template->title = "Post emailed";
+
+		#Render template
+		echo $this->template;
 	}
 
 		public function like($post_id = null) {
