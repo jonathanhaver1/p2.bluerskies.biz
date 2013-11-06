@@ -256,12 +256,9 @@ class posts_controller extends base_controller {
 		$from = Array("name" => APP_NAME, "email" => APP_EMAIL);
 		$subject = "A post that may interest you";
 		$body =
-					"Hi ".$email['first_name'].",\n
-					\n
+					"Hi ".$email['first_name']."\n
 					I just found this post that may interest you:\n
-					\n
 					Author: ".$post['first_name']." ".$post['last_name']."\n
-					Date: ".$post['created']."\n
 					Post: ".$post['content']."\n";
 		$cc  = "";
 		$bcc = "";

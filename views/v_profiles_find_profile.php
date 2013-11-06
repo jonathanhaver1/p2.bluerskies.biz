@@ -2,7 +2,7 @@
 
 <!-- under banner !-->
 <div id ="description">
-    These are the registered users.<br>
+    These are the registered users with profiles.<br>
     Here you can take a look at their profiles.
 </div>
 
@@ -17,7 +17,7 @@
 	    <!-- Print this user's name -->
 	    <span id = "post_table_name"><?=$user_profile['first_name']?> <?=$user_profile['last_name']?></span><br>
 
-	    <form action="/profiles/p_find_profile/<?=$user_profile['profile_id']?>">
+	    <form action="/profiles/p_find_profile/<?=$user_profile['user_id']?>">
 	        <input type="submit" value="Display Profile">
 	    </form><br><br>
 

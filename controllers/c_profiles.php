@@ -155,6 +155,7 @@ class profiles_controller extends base_controller {
 		# Query for all User Profiles
 		$q = "	SELECT
 					user_profiles.profile_id,
+					users.user_id,
 					users.first_name,
 					users.last_name
 				FROM user_profiles

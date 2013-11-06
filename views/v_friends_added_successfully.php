@@ -7,7 +7,7 @@
 </div>
 
 <!-- 3-item menu below box !-->
-<div id="menu_horizontal" style = "margin-top: 150px; margin-left: 10px">
+<div id="menu_horizontal" style = "margin-top: 180px; margin-left: 10px">
 	<ul>
 		<li><a href="/friends/add">Add Another<br>Friend</a></li>
 		<li><a href="/friends/index">View<br>Friends</a></li>

@@ -7,9 +7,7 @@
 
 	</head>
 	
-
 	<body>
-
 
 		<!-- display first name of user if logged in !-->
 		<h1>

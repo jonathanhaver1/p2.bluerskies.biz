@@ -68,3 +68,19 @@
 
 					hello4 
 2013-11-06 14:01:50 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 16:51:12 - INFO --> -------------------------- 
+2013-11-06 16:51:12 - INFO --> Controller/Method: posts/p_email 
+2013-11-06 16:51:12 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 16:51:12 - INFO --> To: sadfsdsadsad saddsasaddsa (saddsadsa),  
+2013-11-06 16:51:12 - INFO --> CC:  
+2013-11-06 16:51:12 - INFO --> BCC:  
+2013-11-06 16:51:12 - INFO --> Subject: A post that may interest you 
+2013-11-06 16:51:12 - INFO --> Body: Hi sadfsdsadsad
+
+					I just found this post that may interest you:
+
+					Author: hello hello
+
+					Post: hello
+ 
+2013-11-06 16:51:12 - INFO --> FAILED TO SEND EMAIL 
