@@ -10,10 +10,13 @@
 
 	<body>
 
+
+		<!-- display first name of user if logged in !-->
 		<h1>
 			Welcome to <?=APP_NAME?><?php if($user) echo ',<br>'.$user->first_name;?></h1>
 		</h1>
 
+		<!-- features box centre-right !-->
 		<div id="special_features" style = "font-size: 14px">
 			On this site you will be able to contribute to online discussions.<br><br>
 			<strong>Members (Users)</strong> can participate in the discussion
@@ -30,7 +33,8 @@
 			+ Invite friends to join the site and contribute by email<br>
 			+ Like Posts (+1)<br>
 			+ See your log in status (upper right corner)<br>
-			+ and more ...<br><br>
+			+ and more ...<br>
+			(project for the future: upload photos)<br>
 
 			Error checking: See if a user lacks a registered profile,
 			you are not following other members, you have not listed any friends,
@@ -38,12 +42,14 @@
 
 		</div>
 
+		<!-- main menu on left side !-->
      	<div id="includeSideMenu"></div>
 
-		<footer style="font-size: small">Banner Photo © Chrisharvey (
-						<a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a>
-						& <a href="http://www.stockfreeimages.com/">Stock Free Images</a>)
-		</footer>
+		<!-- photo copyright !-->
+		<div id ="photo_copyright" style="font-size: small">Banner Photo © Chrisharvey (
+			<a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a>
+			& <a href="http://www.stockfreeimages.com/">Stock Free Images</a>)
+		</div>
 
 	</body>
 

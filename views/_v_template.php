@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
+
 		<title><?php if(isset($title)) echo $title; ?></title>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="/css/generalStyle.css">
 
+		<!-- include jsquery for the side menu -->
 		<script src="/js/jquery-1.10.2.min.js"></script> 
 	    	<script> 
 	    		$(function(){
@@ -20,13 +23,20 @@
 
 	<body>	
 
+		<!-- display the banner header -->
 		<div id="banner_bluerskies">
+
 			Bluer Skies
+
 		</div>
 
-			<div id='banner_photo'><br>
+		<div id='banner_photo'><br>
+
 				<img src="/css/bluerskies.jpg" alt="Bluer Skies" width="800" height="100"><br>
-			</div>
+
+		</div>
+
+		<!-- main menu buttons -->
 
 		<div id ='menu'>
 
@@ -44,7 +54,7 @@
 				<a href='/users/logout'>Logout</a>
 
 
-				<!-- Menu options for users who are not logged in -->
+			<!-- Menu options for users who are not logged in -->
 			<?php else: ?>
 
 				<span id = "login_status">You are <strong>LOGGED OUT</strong></span>
@@ -58,4 +68,5 @@
 		<?php if(isset($content)) echo $content; ?>
 
 	</body>
+	
 </html>

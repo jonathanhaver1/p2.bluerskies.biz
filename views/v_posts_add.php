@@ -2,7 +2,7 @@
 
 <form  id = "form_input" style = 'left: 100px;' method='POST' action='/posts/p_add'>
 
-    <span style='align:center'>
+    <span style='align:center'><br>
 
         <label for='content'>My new post:</label><br>
         <textarea name='content' id='content' type='text' rows='6' cols='45'></textarea><br>
@@ -22,7 +22,7 @@
 </div>
 
 
-<div id="menu_horizontal" style = "position: absolute; top: 540px;">
+<div id="menu_horizontal" style = "position: absolute; top: 560px;">
         <ul>
             <li><a href="/posts/index">View<br>Posts</a></li>
             <li><a href="/posts/users">Follow<br>Users</a></li>

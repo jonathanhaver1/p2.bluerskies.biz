@@ -7,9 +7,10 @@
 
 <br><br><br><br><br><br><br>
 
+<!-- loop through the users !-->
 <?php foreach($users as $user): ?>
 
-    <article>
+    <div id ="data_list">
 
         <!-- Print this user's name -->
         <span id="post_table_name"><?=$user['first_name']?> <?=$user['last_name']?></span>
@@ -30,7 +31,7 @@
         <br>
         ____________________________________<br><br>
 
-    </article>
+    </div>
 
 <?php endforeach; ?>
 

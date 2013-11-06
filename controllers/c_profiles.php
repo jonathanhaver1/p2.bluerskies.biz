@@ -25,26 +25,26 @@ class profiles_controller extends base_controller {
 		}
 
 		# check if profile already exists
-			$q = "	SELECT profile_id
-					FROM user_profiles
-					WHERE user_id = ".$this->user->user_id;
+		$q = "	SELECT profile_id
+				FROM user_profiles
+				WHERE user_id = ".$this->user->user_id;
 
-			$profile_exists = DB::instance(DB_NAME)->select_field($q);
+		$profile_id = DB::instance(DB_NAME)->select_field($q);
 
-			# Profile already exists -> route to profile modification
-			if($profile_exists) {
+		# Profile already exists -> route to profile modification
+		if($profile_id) {
 
-				Router::redirect("/profiles/modify_profile");
+			Router::redirect("/profiles/modify_profile");
 
-			# Profile does not already exist
-			} else {
+		# Profile does not already exist
+		} else {
 
-			##Setup view
-			$this->template->content = View::instance('v_profiles_create_profile');
-			$this->template->title = "Create a Profile";
+		##Setup view
+		$this->template->content = View::instance('v_profiles_create_profile');
+		$this->template->title = "Create a Profile";
 
-			#Render template
-			echo $this->template;
+		#Render template
+		echo $this->template;
 		}
 	}
 
@@ -74,17 +74,18 @@ class profiles_controller extends base_controller {
 			$_POST['user_id'] = $this->user->user_id;
 
 			#insert this user into the database
-			DB::instance(DB_NAME)->insert("user_profiles", $_POST);
+			$profile_id = DB::instance(DB_NAME)->insert("user_profiles", $_POST);
 
-			##Setup view
+			#Setup view & render it
 			$this->template->content = View::instance('v_profiles_successful_creation');
-			$this->template->title = "Profile Update!";
-
-			#Render template
+			$this->template->title = "Profile Created";
 			echo $this->template;
 		}
 	}
 
+	/**
+	* Modify a user profile
+	**/
 	public function modify_profile() {
 
 		# if not logged in -> redirect to the login page
@@ -100,9 +101,6 @@ class profiles_controller extends base_controller {
 		echo $this->template;
 	}
 
-	/**
-	* Modify a user profile
-	**/
 	public function p_modify_profile() {
 
 		# Make sure none of the fields was left blank
@@ -128,11 +126,11 @@ class profiles_controller extends base_controller {
 
 			$_POST['user_id'] = $this->user->user_id;
 			#insert this user into the database
-			DB::instance(DB_NAME)->update("user_profiles", $_POST, "WHERE user_id = ".$this->user->user_id);
+			$profile_id = DB::instance(DB_NAME)->update("user_profiles", $_POST, "WHERE user_id = ".$this->user->user_id);
 
 			##Setup view
 			$this->template->content = View::instance('v_profiles_successful_change');
-			$this->template->title = "Profile Update!";
+			$this->template->title = "Profile Updated";
 
 			#Render template
 			echo $this->template;

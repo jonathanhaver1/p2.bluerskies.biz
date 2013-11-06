@@ -20,3 +20,51 @@
 					Post: hello
  
 2013-11-06 8:16:02 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 9:32:10 - INFO --> -------------------------- 
+2013-11-06 9:32:10 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-06 9:32:10 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 9:32:10 - INFO --> To: saafdsa afsafsa (afsafsa),  
+2013-11-06 9:32:10 - INFO --> CC:  
+2013-11-06 9:32:10 - INFO --> BCC:  
+2013-11-06 9:32:10 - INFO --> Subject: Invite 
+2013-11-06 9:32:10 - INFO --> Body: Hi saafdsa, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					hello 
+2013-11-06 9:32:10 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 13:41:57 - INFO --> -------------------------- 
+2013-11-06 13:41:57 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-06 13:41:57 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 13:41:57 - INFO --> To: ydyf yfy (yfy),  
+2013-11-06 13:41:57 - INFO --> CC:  
+2013-11-06 13:41:57 - INFO --> BCC:  
+2013-11-06 13:41:57 - INFO --> Subject: Invite 
+2013-11-06 13:41:57 - INFO --> Body: Hi ydyf, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					hello4 
+2013-11-06 13:41:57 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 14:01:50 - INFO --> -------------------------- 
+2013-11-06 14:01:50 - INFO --> Controller/Method: friends/email_invitation 
+2013-11-06 14:01:50 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 14:01:50 - INFO --> To: dvdv ddvd (ddvd),  
+2013-11-06 14:01:50 - INFO --> CC:  
+2013-11-06 14:01:50 - INFO --> BCC:  
+2013-11-06 14:01:50 - INFO --> Subject: Invite 
+2013-11-06 14:01:50 - INFO --> Body: Hi dvdv, I would like you to try out my new application BluerSkies at bluerskies.biz.
+
+					There is some really fun stuff to do on it.
+
+					See you there,
+
+
+					hello4 
+2013-11-06 14:01:50 - INFO --> FAILED TO SEND EMAIL 

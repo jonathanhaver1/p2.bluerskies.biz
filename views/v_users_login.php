@@ -1,9 +1,13 @@
-<div id = "special_features" style = "margin-left:200px; margin-top: 130px; width:150px;">
+<h2>Log In</h2>
+
+
+<div id = "comment_box_right">
 
 	Please login to explore all the great things on this site.<br>
 	If you have not yet signed in, go to Sign in below.
 
 </div><br><br><br><br><br>
+
 
 <form id = "form_input" method='POST' action='/users/p_login'><br>
 
@@ -16,21 +20,22 @@
 	<?php if(isset($error)): ?>
 
 		<div class='error'>
-			Login failed. Please double check your email and password.
+			Login failed.<br>Please double check your email and password.
 		</div><br>
 
 	<?php endif; ?>
 
 
-	<br>Please make sure you fill in all fields.<br>
+	<br>Please make sure you fill in all fields<br><br>
 
-	<input type = 'submit' value = 'LogIn'><br><br>
+	<input type = 'submit' value = 'Log In'><br><br>
 
 </form><br><br><br><br><br><br>
 
-<div id="menu_horizontal">
+
+<div id="menu_horizontal" style = "margin-top: 150px">
     <ul>
-        <li><a href="/users/signup">Signup</a></li>
+        <li><a href="/users/signup">Sign<br>Up</a></li>
         <li><a href="index">Home</a></li>
         <li><a href="htp://www.google.com">Google</a></li>
     </ul>

@@ -1,8 +1,14 @@
 <h2>Profile Changed</h2>
 
+<!-- alert box in center of screen !-->
 <div id = "special_features" style = "width: 190px">
 	You successfuly changed your profile.
 </div>
+
+<!-- for the future
+Do you want do add a photo?
+<a href = "/profiles/add_photo/<?=$profile_id?>">Yes</a>
+!-->
 
 <div id = "menu_horizontal" style = "margin-top: 150px">
 	<ul>

@@ -33,7 +33,7 @@
 
 </form>
 
-<div id="menu_horizontal" style = "margin-top: 200px; margin-left: 0">
+<div id="menu_horizontal" style = "margin-top: 280px; margin-left: 0">
     <ul>
         <li><a href="/users/signup">Sign<br>Up</a></li>
         <li><a href="index">Home</a></li>

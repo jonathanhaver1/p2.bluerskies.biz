@@ -8,12 +8,6 @@
 			HTML tags
 ---------------------------------------------------------------------------------------------------------*/
 
-			/* Data display (posts, friends) */
-
-			article {
-				margin-left: 260px;
-			}
-
 			body {
 				margin-top:	20px;
 				margin-left: 20px;
@@ -37,7 +31,7 @@
 				position: absolute;
 				top: 180px;
 				left: 340px;
-				font-family: 'Helvetica Neue', helvetica, 'microsoft sans serif', arial, sans-serif;
+				font-family: 'Helvetica', helvetica, arial, sans-serif;
 			  	font-size: 120%;
 			  	color: #3333FF;
 			}
@@ -49,14 +43,6 @@
 				text-align: justify;
 				font-family: arial;
 				width:75%;
-			}
-
-			/* footer text */
-
-			footer {
-				position: absolute;
-				top: 870px;
-				left: 20px;
 			}
 
 			ol {
@@ -128,6 +114,14 @@
 				text-align: center;
 				font-family: arial;
 				color: #000066;
+			}
+
+			/* on index page: photo copyright */
+
+			#photo_copyright {
+				position: absolute;
+				top: 870px;
+				left: 20px;
 			}
 
 			/* Special features box on index page */
@@ -305,7 +299,7 @@
 			  padding-top: 5px;
 			  padding-bottom: 5px;
 			  text-transform: uppercase;
-			  font-family: 'Helvetica Neue', helvetica, 'microsoft sans serif', arial, sans-serif;
+			  font-family: 'Helvetica', helvetica, arial, sans-serif;
 			  font-size: 90%;
 			  color: #FFFFFF;
 			  text-decoration: none;
@@ -367,6 +361,12 @@
 			DATA display
 ---------------------------------------------------------------------------------------------------------*/
 
+			/* data listings (eg users, posts) */
+			#data_list {
+				margin-left: 260px;
+				font: Georgia;
+			}
+
 			/* FRIENDS */
 
 			#friends_list {
@@ -385,20 +385,19 @@
 			/* POSTS */
 
 			#post_content {
-				font-size: 14px;
+				font: Georgia 14px;
 				color: #000099;
 				border: 2px dotted;
 				border-color: #003399;
 				padding-left: 10px;
 				padding-right: 10px;
 				max-width: 150px;
-				font-family: cursive;
 				text-align: center;	
 				background-color: #EEEEFF;	
 			}
 
 			#post_table_name {
-				font:italic bold 12px/30px Georgia, serif;
+				font: bold 16px Georgia;
 				color: #3333FF;
 				padding-top: 25px;
 				padding-bottom: 10px;	

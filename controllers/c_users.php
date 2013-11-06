@@ -103,34 +103,54 @@ class users_controller extends base_controller {
 	}
 
 	public function p_login() {
-		# Sanitize the user entered data
-		$_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
-		# Hash submitted password for comparison with db
-		$_POST['password'] = sha1 (PASSWORD_SALT.$_POST['password']);
+		# Make sure none of the fields was left blank
+		# Array of fields
+		$submitted = array('email', 'password');
 
-		# Search the db for this email and password
-		# Retrieve the token if it is available
-		$q = "	SELECT token
-				FROM users
-				WHERE email = '".$_POST['email']."'
-				AND password = '".$_POST['password']."'";
+		# Loop through fields
+		$empty_field = false;
+		foreach($submitted as $field) {
+  			if (empty($_POST[$field])) {
+    		$empty_field = true;
+  			}
+		}
 
-		$token = DB::instance(DB_NAME)->select_field($q);
+		# if a fied has been left blank - alert user
+		if ($empty_field) {
+			Router::redirect("/users/login");
 
-		# No matching token -> login failed -> return to login page
-		if(!$token) {
-
-			Router::redirect("/users/login/error");
-
-		# Matching token -> login succeeded
+		# if all fields have been filled in
 		} else {
-			
-			# Store this token in a cookie
-			setcookie("token", $token, strtotime('+2 weeks'), '/');
+			# Sanitize the user entered data
+			$_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
-			# Send to the main page
-			Router::redirect("/");
+			# Hash submitted password for comparison with db
+			$_POST['password'] = sha1 (PASSWORD_SALT.$_POST['password']);
+
+			# Search the db for this email and password
+			# Retrieve the token if it is available
+			$q = "	SELECT token
+					FROM users
+					WHERE email = '".$_POST['email']."'
+					AND password = '".$_POST['password']."'";
+
+			$token = DB::instance(DB_NAME)->select_field($q);
+
+			# No matching token -> login failed -> return to login page
+			if(!$token) {
+
+				Router::redirect("/users/login/error");
+
+			# Matching token -> login succeeded
+			} else {
+				
+				# Store this token in a cookie
+				setcookie("token", $token, strtotime('+2 weeks'), '/');
+
+				# Send to the main page
+				Router::redirect("/");
+			}
 		}
 	}
 
@@ -188,6 +208,7 @@ class users_controller extends base_controller {
 						user_profiles.country,
 						user_profiles.interests,
 						user_profiles.birthyear,
+						user_profiles.profile_id,
 						users.first_name,
 						users.last_name
 					FROM user_profiles

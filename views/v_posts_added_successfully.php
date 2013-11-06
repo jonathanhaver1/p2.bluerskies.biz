@@ -5,7 +5,7 @@
 	You have just added a post other users will be able to read when they follow you.
 </div>
 
-<div id="menu_horizontal" style ="margin-top: 150px; margin-left: 60px">
+<div id="menu_horizontal" style ="margin-top: 200px; margin-left: 60px">
 	<ul>
 		<li><a href="/posts/add">Add<br>Another Post</a></li>
 		<li><a href="/posts/index">See<br>Posts</a></li>

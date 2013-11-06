@@ -7,20 +7,20 @@
 
 <br><br><br><br><br><br><br>
 
-
+<!-- loop through the posts from users the user follows !-->
 <?php foreach($posts as $post): ?>
 
     <article>
 
         Likes: <strong><?=$post['likes']?></strong><br><br>
 
-        <span id="post_table_name"><u><?=$post['first_name']?> <?=$post['last_name']?></u></span>
+        <span id="post_table_name"><u><?=$post['first_name']?> <?=$post['last_name']?></u></span><br>
 
-        posted<br>on
+        posted on
 
-        <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
-                <span style="font: arial"><?=Time::display($post['created'])?></span>
-        </time>
+            <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
+                    <span style="font: arial"><?=Time::display($post['created'])?></span>
+            </time>
 
         :<br><br>
 
@@ -40,10 +40,10 @@
 
 <?php endforeach; ?>
 
-
+<!-- main menu on the left of screen !-->
 <div id="includeSideMenu"></div>
 
-
+<!-- comment box on the right of screen !-->
 <div id = "comment_box_right">
     On this page you see the posts by the people you follow.<br>
     You can email a post using 'Email This Post'.<br><br>
