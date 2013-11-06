@@ -5,7 +5,6 @@ class friends_controller extends base_controller {
 	public function _construct() {
 		parent::_construct();
 
-
 		# Registered users only
 		if (!$this->user) {
 			Router::redirect('/users/login');

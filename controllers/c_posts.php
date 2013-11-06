@@ -48,6 +48,26 @@ class posts_controller extends base_controller {
 		if (!$this->user) {
 		Router::redirect('/users/login'); }
 
+		# Query whehther Posts exist
+		$q = '	SELECT post_id
+				FROM posts
+		        INNER JOIN users_users 
+		            ON posts.user_id = users_users.user_id_followed
+		        INNER JOIN users 
+		            ON posts.user_id = users.user_id
+		        WHERE users_users.user_id = '.$this->user->user_id;
+		$post_exists = DB::instance(DB_NAME)->select_field($q);
+
+		# If no posts to display, display 'Sorry No Profile'
+		if (!$post_exists) {
+			#Setup view
+			$this->template->content = View::instance('v_posts_no_posts');
+			$this->template->title = "No Posts";
+
+			# Render the View
+			echo $this->template;
+		} else {
+
 		# Set up the View
 		$this->template->content = View::instance('v_posts_index');
 		$this->template->title   = "Posts";
@@ -74,6 +94,7 @@ class posts_controller extends base_controller {
 		# Pass data to the View and render the View
 		$this->template->content->posts = $posts;
 		echo $this->template;
+		}
 	}
 
 
@@ -174,10 +195,10 @@ class posts_controller extends base_controller {
 
 		# Query the post and the author
     	$q = 'SELECT 
-            posts.content,
-            posts.created,
-            users.first_name,
-            users.last_name
+	            posts.content,
+	            posts.created,
+	            users.first_name,
+	            users.last_name
         FROM posts
         INNER JOIN users 
             ON posts.user_id = users.user_id
@@ -229,7 +250,7 @@ class posts_controller extends base_controller {
 		# Send them back
 		Router::redirect("/posts/index");
 	}
-
+	
 }
 
 ?>

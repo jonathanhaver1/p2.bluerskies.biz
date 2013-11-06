@@ -26,9 +26,9 @@
 </form><br><br><br><br><br><br>
 
 <div id="menu_horizontal">
-        <ul>
-            <li><a href="/users/signup">Signup</a></li>
-            <li><a href="index">Home</a></li>
-            <li><a href="htp://www.google.com">Google</a></li>
-        </ul>
+    <ul>
+        <li><a href="/users/signup">Signup</a></li>
+        <li><a href="index">Home</a></li>
+        <li><a href="htp://www.google.com">Google</a></li>
+    </ul>
 </div>

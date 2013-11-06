@@ -4,11 +4,10 @@
 	You successfuly created a personal profile.
 </div>
 
-
 <div id="menu_horizontal" style = "margin-top: 150px">
-<ul>
-	<li><a href="/posts/add">Add a Post</a></li>
-	<li><a href="/users/profile">Check Out Your Profile</a></li>
-	<li><a href="/friends/add">Add Friend</a></li>
-</ul>
+	<ul>
+		<li><a href="/posts/add">Add a Post</a></li>
+		<li><a href="/users/profile">Check Out Your Profile</a></li>
+		<li><a href="/friends/add">Add Friend</a></li>
+	</ul>
 </div>
