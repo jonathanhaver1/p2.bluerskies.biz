@@ -4,6 +4,9 @@
     You can create and post your profile below.<br>
     If you already have a profile you will be taken their automatically.<br>
 
+</div>
+
+<!-- request pofile data !-->
 <form id = "form_profile" method='POST' action='/profiles/p_create_profile'>
 
 	<span style='align:center'>
@@ -33,9 +36,11 @@
 </form> 
 
 
+<!-- main menu side left !-->
 <div id="includeSideMenu"></div>
 
 
+<!-- comment box upper right !-->
 <div id="comment_box_right">
         Create your profile. Other users will be able to see it.
 </div>

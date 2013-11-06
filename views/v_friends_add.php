@@ -5,7 +5,7 @@
     to forward messages and to send an invitation.<br>
 </div>
 
-
+<!-- form for profile information -> data table user_profiles !-->
 <form id = "form_profile" method='POST' action='/friends/p_add'>
 
 	<span style='align:center'><br>
@@ -36,10 +36,10 @@
 
 </form> 
 
-
+<!-- main menu on side left !-->
 <div id="includeSideMenu"></div>
 
-
+<!-- comments box on upper side right !-->
 <div id = "comment_box_right">
     When you add a friend, only you have access to your friends.<br>
     You can send posts and profiles to your friends.<br>

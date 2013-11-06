@@ -1,6 +1,6 @@
 <h2>Log In</h2>
 
-
+<!-- comments box on upper side right !-->
 <div id = "comment_box_right">
 
 	Please login to explore all the great things on this site.<br>
@@ -9,6 +9,7 @@
 </div><br><br><br><br><br>
 
 
+<!-- login data !-->
 <form id = "form_input" method='POST' action='/users/p_login'><br>
 
 	Email<br>
@@ -33,6 +34,7 @@
 </form><br><br><br><br><br><br>
 
 
+<!-- menu below !-->
 <div id="menu_horizontal" style = "margin-top: 150px">
     <ul>
         <li><a href="/users/signup">Sign<br>Up</a></li>

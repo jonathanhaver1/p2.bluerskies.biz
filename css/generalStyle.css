@@ -289,7 +289,7 @@
 			  width: 100%;
 			  margin: 10;
 			  padding: 10;
-			  background: transparent url(/css/bg-bubplastic-button.gif) top left no-repeat;
+			  background: transparent url(/css/button_grey.gif) top left no-repeat;
 			}
 			#menu_side ul li a {
 			  display: block;
@@ -303,7 +303,7 @@
 			  font-size: 90%;
 			  color: #FFFFFF;
 			  text-decoration: none;
-			  background: transparent url(/css/bg-bubplastic-button.gif) top left no-repeat;
+			  background: transparent url(/css/button_grey.gif) top left no-repeat;
 			}
 			#menu_side ul li a span {
 			  display: block;
@@ -312,16 +312,16 @@
 			  height: 35px;
 			  padding-top: 5px;
 			  padding-right: 35px;
-			  background: transparent url(/css/bg-bubplastic-button.gif) top right no-repeat;
+			  background: transparent url(/css/button_grey.gif) top right no-repeat;
 			  cursor: pointer;
 			}
 			#menu_side ul li a:hover,
 			#menu_side ul li.active a {
-			  background: transparent url(/css/bg-bubplastic-h-blue.gif) top left no-repeat;
+			  background: transparent url(/css/button_blue.gif) top left no-repeat;
 			}
 			#menu_side ul li a:hover span,
 			#menu_side ul li.active a span {
-			  background: transparent url(/css/bg-bubplastic-h-blue.gif) top right no-repeat;
+			  background: transparent url(/css/button_blue.gif) top right no-repeat;
 			}
 			#menu_side_header {
 				font-family: 'Helvetica Neue', helvetica, 'microsoft sans serif', arial, sans-serif;

@@ -1,12 +1,16 @@
+<h2>Sign Up</h2>
 
-<div id = "special_features" style = "margin-left:200px; margin-top: 130px; width:150px;">
+<!-- comments box upper right !-->
+<div id = "comment_box_right">
 
-	Please login to explore all the great things on this site.<br>
-	If you have not yet signed in, go to Sign in below.
+	Sign up to explore all the great things on this site.<br>
+	<strong>You can sign up only once with the same email address</strong>
 
 </div>
 <br><br><br><br><br>
 
+
+<!-- request basic information for signup !-->
 <form id = "form_input" method = 'POST' action='/users/p_signup'>
 
 	<br>
@@ -33,10 +37,11 @@
 
 </form>
 
-<div id="menu_horizontal" style = "margin-top: 280px; margin-left: 0">
+<!-- three-item menu below !-->
+<div id="menu_horizontal" style = "margin-top: 330px; margin-left: 0">
     <ul>
-        <li><a href="/users/signup">Sign<br>Up</a></li>
         <li><a href="index">Home</a></li>
+        <li><a href="/users/login">Log<br>In</a></li>
         <li><a href="htp://www.google.com">Google</a></li>
     </ul>
 </div>

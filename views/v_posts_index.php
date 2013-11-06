@@ -10,7 +10,7 @@
 <!-- loop through the posts from users the user follows !-->
 <?php foreach($posts as $post): ?>
 
-    <article>
+    <div id = "data_list">
 
         Likes: <strong><?=$post['likes']?></strong><br><br>
 
@@ -36,7 +36,7 @@
 
         ____________________________________<br><br>
 
-    </article>
+    </div>
 
 <?php endforeach; ?>
 

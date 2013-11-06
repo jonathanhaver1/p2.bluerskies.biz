@@ -1,5 +1,6 @@
 <h2>Modify Your Profile</h2>
 
+<!-- text under banner !-->
 <div id ="description">
 
     You can modify and update your profile below<br><br>
@@ -9,6 +10,7 @@
     
 </div>
 
+<!-- request new profile information!-->
 <form id = "form_profile" method='POST' action='/profiles/p_modify_profile'>
 
     <br>
@@ -40,9 +42,11 @@
 </form> 
 
 
+<!-- main menu side left !-->
 <div id="includeSideMenu"></div>
 
 
+<!-- comment box in the upper right !-->
 <div id="comment_box_right">
         Modify your profile.<br>Other users will be able to see the changes.
 </div>

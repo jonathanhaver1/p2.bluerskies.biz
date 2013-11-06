@@ -33,6 +33,7 @@
 			+ Invite friends to join the site and contribute by email<br>
 			+ Like Posts (+1)<br>
 			+ See your log in status (upper right corner)<br>
+			+ 3 different menus
 			+ and more ...<br>
 			(project for the future: upload photos)<br>
 
