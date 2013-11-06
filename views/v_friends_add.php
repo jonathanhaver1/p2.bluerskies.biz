@@ -2,7 +2,7 @@
 
 <div id ="description">
     You can add a friend below<br>
-    to forward messages and to send an invitation.
+    to forward messages and to send an invitation.<br>
 </div>
 
 
@@ -10,7 +10,8 @@
 
 	<span style='align:center'><br>
 
-        Please enter your friend's details<br><br><br>
+        Please enter your friend's details<br>
+        and fill in ALL fields<br><br>
 
         <label for='first_name'>First Name:</label><br>
         <textarea name='first_name' id='first_name' type='text' size='30'></textarea><br><br>

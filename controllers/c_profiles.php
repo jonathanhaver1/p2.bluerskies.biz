@@ -24,27 +24,65 @@ class profiles_controller extends base_controller {
 			Router::redirect('/users/login');
 		}
 
-		##Setup view
-		$this->template->content = View::instance('v_profiles_create_profile');
-		$this->template->title = "Create a Profile";
+		# check if profile already exists
+			$q = "	SELECT profile_id
+					FROM user_profiles
+					WHERE user_id = ".$this->user->user_id;
 
-		#Render template
-		echo $this->template;
+			$profile_exists = DB::instance(DB_NAME)->select_field($q);
+
+			# Profile already exists -> route to profile modification
+			if($profile_exists) {
+
+				Router::redirect("/profiles/modify_profile");
+
+			# Profile does not already exist
+			} else {
+
+			##Setup view
+			$this->template->content = View::instance('v_profiles_create_profile');
+			$this->template->title = "Create a Profile";
+
+			#Render template
+			echo $this->template;
+		}
 	}
 
 	public function p_create_profile() {
 
-		$_POST['user_id'] = $this->user->user_id;
+		# Make sure none of the fields was left blank
+		# Array of fields
+		$submitted = array('city', 'country', 'birthyear', 'interests');
 
-		#insert this user into the database
-		DB::instance(DB_NAME)->insert("user_profiles", $_POST);
+		# Loop through fields
+		$empty_field = false;
+		foreach($submitted as $field) {
+  			if (empty($_POST[$field])) {
+    		$empty_field = true;
+  			}
+		}
 
-		##Setup view
-		$this->template->content = View::instance('v_profiles_successful_creation');
-		$this->template->title = "Profile Update!";
+		# if a fied has been left blank - alert user
+		if ($empty_field) {
+  			$this->template->content = View::instance('v_error_empty_fields');
+			$this->template->title = "Empty Fields";
+			echo $this->template;
 
-		#Render template
-		echo $this->template;
+		# if all fields have been filled in
+		} else {
+
+			$_POST['user_id'] = $this->user->user_id;
+
+			#insert this user into the database
+			DB::instance(DB_NAME)->insert("user_profiles", $_POST);
+
+			##Setup view
+			$this->template->content = View::instance('v_profiles_successful_creation');
+			$this->template->title = "Profile Update!";
+
+			#Render template
+			echo $this->template;
+		}
 	}
 
 	public function modify_profile() {
@@ -67,16 +105,38 @@ class profiles_controller extends base_controller {
 	**/
 	public function p_modify_profile() {
 
-		$_POST['user_id'] = $this->user->user_id;
-		#insert this user into the database
-		DB::instance(DB_NAME)->update("user_profiles", $_POST, "WHERE user_id = ".$this->user->user_id);
+		# Make sure none of the fields was left blank
+		# Array of fields
+		$submitted = array('city', 'country', 'birthyear', 'interests');
 
-		##Setup view
-		$this->template->content = View::instance('v_profiles_successful_change');
-		$this->template->title = "Profile Update!";
+		# Loop through fields
+		$empty_field = false;
+		foreach($submitted as $field) {
+  			if (empty($_POST[$field])) {
+    		$empty_field = true;
+  			}
+		}
 
-		#Render template
-		echo $this->template;
+		# if a fied has been left blank - alert user
+		if ($empty_field) {
+  			$this->template->content = View::instance('v_error_empty_fields');
+			$this->template->title = "Empty Fields";
+			echo $this->template;
+
+		# if all fields have been filled in
+		} else {
+
+			$_POST['user_id'] = $this->user->user_id;
+			#insert this user into the database
+			DB::instance(DB_NAME)->update("user_profiles", $_POST, "WHERE user_id = ".$this->user->user_id);
+
+			##Setup view
+			$this->template->content = View::instance('v_profiles_successful_change');
+			$this->template->title = "Profile Update!";
+
+			#Render template
+			echo $this->template;
+		}
 	}
 
 	/**

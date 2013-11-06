@@ -1,7 +1,12 @@
 <h2>Modify Your Profile</h2>
 
 <div id ="description">
-    You can modify and update your profile below<br>
+
+    You can modify and update your profile below<br><br>
+
+    <span style = "font-style: italic">If you already have a profile and clicked on 'Add Profile'
+    you are taken here automatically.</span>
+    
 </div>
 
 <form id = "form_profile" method='POST' action='/profiles/p_modify_profile'>
@@ -11,7 +16,7 @@
     <span style='align:center'>
 
         Please enter your details.<br>
-        If you want to skip a field, leave it blank.
+        You must fill in all fields.
         <br>
         <br>
 

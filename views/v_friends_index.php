@@ -14,14 +14,11 @@
 
     <div id ="friends_list">
 
-        <span id="post_table_name">
+        <span id = "post_table_name"><?=$friend['first_name']?> <?=$friend['last_name']?></span><br>
 
-            <?=$friend['first_name']?> <?=$friend['last_name']?><br>
-            Email: <?=$friend['email']?><br>
-            Interests: <?=$friend['interests']?><br>
-            Comments: <?=$friend['comments']?><br><br>
-
-        </span>
+        Email: <?=$friend['email']?><br>
+        Interests: <?=$friend['interests']?><br>
+        Comments: <?=$friend['comments']?><br><br>
 
         on the list since: 
 
@@ -31,7 +28,10 @@
 
         <form action="/friends/email_invitation/<?=$friend['friend_id']?>">
             <input type="submit" value="Email this Friend an Invitation">
-        </form><br><br>
+        </form><br>
+
+
+        ____________________________________<br><br>
 
     </div>
 

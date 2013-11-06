@@ -14,7 +14,7 @@
 			Welcome to <?=APP_NAME?><?php if($user) echo ',<br>'.$user->first_name;?></h1>
 		</h1>
 
-		<div id="special_features" style = "top: 130px">
+		<div id="special_features" style = "font-size: 14px">
 			On this site you will be able to contribute to online discussions.<br><br>
 			<strong>Members (Users)</strong> can participate in the discussion
 			and have individual profiles which can be viewed by other members.<br><br>
@@ -25,14 +25,16 @@
 
 			+ Create and modify your profile<br>
 			+ Display other users' profiles<br>
-			See if + a user has not registered a profile,<br>
-			+ you are not following user posts or + have not registered friends.<br>
 			+ Email a post to a friend from your list of friends<br>
 			+ Compile and display a list of your friends<br>
 			+ Invite friends to join the site and contribute by email<br>
 			+ Like Posts (+1)<br>
 			+ See your log in status (upper right corner)<br>
-			+ and more ...
+			+ and more ...<br><br>
+
+			Error checking: See if a user lacks a registered profile,
+			you are not following other members, you have not listed any friends,
+			an input field is accidentally left blank, an email address already exists on signup, and more...<br>
 
 		</div>
 

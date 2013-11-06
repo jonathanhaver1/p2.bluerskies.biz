@@ -27,7 +27,8 @@
             <span id="post_content"><a href='/posts/follow/<?=$user['user_id']?>'>Follow</a></span>
         <?php endif; ?>
 
-        <br><br><br>
+        <br>
+        ____________________________________<br><br>
 
     </article>
 

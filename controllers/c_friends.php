@@ -36,20 +36,42 @@ class friends_controller extends base_controller {
 
 	public function p_add() {
 
-		# Associate this friend with this user
-		$_POST['user_id']  = $this->user->user_id;
+		# Make sure none of the fields was left blank
+		# Array of fields
+		$submitted = array('first_name', 'last_name', 'email', 'interests', 'comments');
 
-		# Add a timestamp
-		$_POST['created']  = Time::now();
-		$_POST['modified'] = Time::now();
+		# Loop through fields
+		$empty_field = false;
+		foreach($submitted as $field) {
+  			if (empty($_POST[$field])) {
+    		$empty_field = true;
+  			}
+		}
 
-		# Insert into database
-		DB::instance(DB_NAME)->insert('friends', $_POST);
+		# if a fied has been left blank - alert user
+		if ($empty_field) {
+  			$this->template->content = View::instance('v_error_empty_fields');
+			$this->template->title = "Empty Fields";
+			echo $this->template;
 
-		##Setup view and render it
-		$this->template->content = View::instance('v_friends_added_successfully');
-		$this->template->title = "Success";
-		echo $this->template;
+		# if all fields have been filled in
+		} else {
+
+			# Associate this friend with this user
+			$_POST['user_id']  = $this->user->user_id;
+
+			# Add a timestamp
+			$_POST['created']  = Time::now();
+			$_POST['modified'] = Time::now();
+
+			# Insert into database
+			DB::instance(DB_NAME)->insert('friends', $_POST);
+
+			##Setup view and render it
+			$this->template->content = View::instance('v_friends_added_successfully');
+			$this->template->title = "Success";
+			echo $this->template;
+		}
 	}
 
 	public function index() {

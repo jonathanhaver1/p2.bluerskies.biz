@@ -1,0 +1,22 @@
+2013-11-06 8:16:02 - INFO --> -------------------------- 
+2013-11-06 8:16:02 - INFO --> Controller/Method: posts/p_email 
+2013-11-06 8:16:02 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 8:16:02 - INFO --> To: hello hello (hello),  
+2013-11-06 8:16:02 - INFO --> CC:  
+2013-11-06 8:16:02 - INFO --> BCC:  
+2013-11-06 8:16:02 - INFO --> Subject: A post that may interest you 
+2013-11-06 8:16:02 - INFO --> Body: Hi hello,
+
+					
+
+					I just found this post that may interest you:
+
+					
+
+					Author: hello hello
+
+					Date: 1382807492
+
+					Post: hello
+ 
+2013-11-06 8:16:02 - INFO --> FAILED TO SEND EMAIL 

@@ -10,22 +10,22 @@
 
 <?php foreach($friends as $friend): ?>
 
-    <div id ="friends_list">
+	    <div id ="friends_list">
 
-        <span id="post_table_name"><?=$friend['first_name']?> <?=$friend['last_name']?></span><br>
+	        <span id="post_table_name"><?=$friend['first_name']?> <?=$friend['last_name']?></span><br>
 
-        <?=$friend['email']?><br>
+	        <?=$friend['email']?><br>
 
-        <span id="post_content"><a href='/posts/p_email/<?=$friend['friend_id']?>/<?=$post_id?>'>Email this post to this friend</a></span>
+	        <span id="post_content"><a href='/posts/p_email/<?=$friend['friend_id']?>/<?=$post_id?>'>Email this post to this friend</a></span>
 
-        <br><br>
+	        <br><br>
 
-    </div>
+	    </div>
 
 <?php endforeach; ?>
 
 
-<div id="includedSideMenu"></div>
+<div id="includeSideMenu"></div>
 
 
 <div id="comment_box_right">

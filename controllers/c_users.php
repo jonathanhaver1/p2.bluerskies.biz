@@ -30,25 +30,63 @@ class users_controller extends base_controller {
 
 	public function p_signup() {
 
-		# storing time of creation and modfication for the user
-		$_POST['created'] = Time::now();
-		$_POST['modified'] = Time::now();
+		# Make sure none of the fields was left blank
+		# Array of fields
+		$submitted = array('first_name', 'last_name', 'email', 'password');
 
-		# Encrypt the password
-		$_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
+		# Loop through fields
+		$empty_field = false;
+		foreach($submitted as $field) {
+  			if (empty($_POST[$field])) {
+    		$empty_field = true;
+  			}
+		}
 
-		# Create an encrypted token via their email address and a random string
-		$_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
+		# if a fied has been left blank - alert user
+		if ($empty_field) {
+  			$this->template->content = View::instance('v_error_empty_fields');
+			$this->template->title = "Empty Fields";
+			echo $this->template;
 
-		#insert this user into the database
-		$user_id = DB::instance(DB_NAME)->insert("users", $_POST);
+		# if all fields have been filled in
+		} else {
 
-		##Setup view
-		$this->template->content = View::instance('v_users_successful_signup');
-		$this->template->title = "Welcome!";
+			# check if email already exists
+			$q = "	SELECT email
+					FROM users
+					WHERE email = '".$_POST['email']."'";
 
-		#Render template
-		echo $this->template;
+			$email_exists = DB::instance(DB_NAME)->select_field($q);
+
+			# Email already exists -> return to signup page
+			if($email_exists) {
+
+				Router::redirect("/users/signup");
+
+			# Email does not already exist
+			} else {
+
+				# storing time of creation and modfication for the user
+				$_POST['created'] = Time::now();
+				$_POST['modified'] = Time::now();
+
+				# Encrypt the password
+				$_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
+
+				# Create an encrypted token via their email address and a random string
+				$_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
+
+				#insert this user into the database
+				$user_id = DB::instance(DB_NAME)->insert("users", $_POST);
+
+				##Setup view
+				$this->template->content = View::instance('v_users_successful_signup');
+				$this->template->title = "Welcome!";
+
+				#Render template
+				echo $this->template;
+			}
+		}
 	}
 
 	public function login($error = NULL) {

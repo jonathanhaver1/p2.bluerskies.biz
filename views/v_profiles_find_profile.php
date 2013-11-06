@@ -13,7 +13,7 @@
 <?php foreach($user_profiles as $user_profile): ?>
 
     <!-- Print this user's name -->
-    <?=$user_profile['first_name']?> <?=$user_profile['last_name']?><br>
+    <span id = "post_table_name"><?=$user_profile['first_name']?> <?=$user_profile['last_name']?></span><br>
 
     <form action="/profiles/p_find_profile/<?=$user_profile['profile_id']?>">
         <input type="submit" value="Display Profile">

@@ -1,8 +1,14 @@
 			/**
 			* generalStyle.css
-			* The general style for the site
+			* The general styles for the site
 			* p2.bluerskies.biz
 			**/
+
+/* -------------------------------------------------------------------------------------------------------
+			HTML tags
+---------------------------------------------------------------------------------------------------------*/
+
+			/* Data display (posts, friends) */
 
 			article {
 				margin-left: 260px;
@@ -11,9 +17,8 @@
 			body {
 				margin-top:	20px;
 				margin-left: 20px;
-				//background-image: url("/css/lblue157.gif");
 				background-color: #FFFFFF;
-				//background-repeat: repeat;
+				font-size: 16px;
 			}
 
 			h1 {
@@ -25,6 +30,8 @@
 				text-align: center;
 				font-family: cursive;
 			}
+
+			/* Page Headings */
 
 			h2 {
 				position: absolute;
@@ -44,9 +51,11 @@
 				width:75%;
 			}
 
+			/* footer text */
+
 			footer {
 				position: absolute;
-				top: 810px;
+				top: 870px;
 				left: 20px;
 			}
 
@@ -66,14 +75,21 @@
 				font-family: arial;
 			}
 
+/* -------------------------------------------------------------------------------------------------------
+			Bluer Skies Banner
+---------------------------------------------------------------------------------------------------------*/
+
+			/* Bluer Skies site name */
+
 			#banner_bluerskies {
 				position: absolute;
-				top: 20px;
-				left: 630px;
+				top: 15px;
+				left: 590px;
 				color: #0000FF;
-				font-size: 36px;
-				font-style: bold;
+				font: 36px Georgia bold;
 			}
+
+			/* Bluer Skies photo */
 
 			#banner_photo {
 				position: absolute;
@@ -81,11 +97,17 @@
 				margin-bottom: 35px;
 			}
 
+/* -------------------------------------------------------------------------------------------------------
+			Comments and Descriptions on Page
+---------------------------------------------------------------------------------------------------------*/
+
+			/* Comments Box */
+
 			#comment_box_right {
 				position: absolute;
 				top: 340px;
 				left: 615px;
-				font-size: 90%;
+				font-size: 16px;
 				color: #000099;
 				border: 10px ridge #003399;
 				width: 150px;
@@ -108,46 +130,85 @@
 				color: #000066;
 			}
 
+			/* Special features box on index page */
+
+			#special_features {
+				position: absolute;
+				top: 340px;
+				left: 300px;
+				width: 470px;
+				font-size: 18px;
+				color: #000099;
+				border: 10px ridge #003399;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				font-family: cursive;
+				text-align: center;	
+				background-color: #EEEEFF;
+				font-size: 16px;	
+			}
+
+			/* Alert messages box */
+
+			#warning {
+				position: absolute;
+				top: 340px;
+				left: 300px;
+				width: 270px;
+				font-size: 18px;
+				color: #000099;
+				border: 10px ridge #003399;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				font-family: cursive;
+				text-align: center;	
+				background-color: #EEEEFF;	
+			}
+
+/* -------------------------------------------------------------------------------------------------------
+			FORMS
+---------------------------------------------------------------------------------------------------------*/
+
+			/* general form */
+
 			#form_input {
 				position: absolute;
-				top: 60px;
+				top: 340px;
 				left: 230px;
 				border: 10px ridge #660066;
-				margin-top: 200px;
-				margin-bottom: 25px;
 				padding-left: 10px;
 				padding-right: 10px;
 				text-align: center;	
 			}
 
+			/* profile form */
+
 			#form_profile {
 				position: absolute;
-				top: 90px;
-				left: 250px;
+				top: 340px;
+				left: 265px;
 				border: 10px ridge #660066;
-				margin-top: 200px;
-				margin-bottom: 25px;
 				padding-left: 10px;
 				padding-right: 10px;
 				text-align: center;					
 			}
 
-			#friends_list {
-				color: black;
-				margin-left: 260px;
-			}
-			#login_status {
-				position: absolute;
-				top: 180px;
-				left: 660px;
-			}
+/* -------------------------------------------------------------------------------------------------------
+			MENUS
+---------------------------------------------------------------------------------------------------------*/
+
+
+			/* top menu above banner */
 
 			#menu ul {
 				padding-left:40%;
 				padding-top: 50px;
 				padding-bottom: 50px;
 			}
-
 			#menu li {
 				list-style-type: none;
 				padding-left:40%;
@@ -155,7 +216,6 @@
 				width: 10em;
 				text-align: center;
 			}
-
 			#menu a {
 				text-decoration: none;
 				font-family: arial;
@@ -168,10 +228,11 @@
 				float: left;
 				text-align: center;
 			}
-
 			#menu a:hover {
 				border: 8px green inset;
 			}
+
+			/* menu below banner */
 
 			#menu_page {
 				border: 8px blue inset;
@@ -185,20 +246,17 @@
 				padding-bottom: 100px;
 				padding-right: 10px;
 			}
-
 			#menu_page ul {
 				padding-left:10%;
 				float: left;
 				margin-top: 20px;
 			}
-
 			#menu_page li {
 				list-style-type: none;
 				width: 10em;
 				text-align: center;
 				float: left;
 			}
-
 			#menu_page a {
 				text-decoration: none;
 				font-family: arial;
@@ -208,10 +266,11 @@
 				background-color: #DDDDFF;
 				float: left;
 			}
-
 			#menu_page a:hover {
 				border: 8px green inset;
 			}
+
+			/* MAIN MENU on left side */
 
 			#menu_side {
 				position: absolute;
@@ -276,25 +335,7 @@
 			  	color: #3333FF;
 			}
 
-			#notes {
-				font-size: small;
-				text-align: center;
-				margin-top: 45px;
-				margin-bottom: 20px;
-			}
-
-			#post_content {
-				font-size: 90%;
-				color: #000099;
-				border: 2px dotted;
-				border-color: #003399;
-				padding-left: 10px;
-				padding-right: 10px;
-				max-width: 150px;
-				font-family: cursive;
-				text-align: center;	
-				background-color: #EEEEFF;	
-			}
+			/* horizontal menu below confirmation or alert messages */
 
 			#menu_horizontal ul {
 				margin-left: 100px;				
@@ -317,10 +358,43 @@
 				color:white;
 				background-color:purple;
 				padding:0.2em 0.6em;
-				border-right:1px solid white;
+				border-right: 6px solid gray;
 			}
 			#menu_horizontal a:hover {background-color:#3333FF;}
 			#menu_horizontal li {display:inline;}
+
+/* -------------------------------------------------------------------------------------------------------
+			DATA display
+---------------------------------------------------------------------------------------------------------*/
+
+			/* FRIENDS */
+
+			#friends_list {
+				font-color: #FFFFFF;
+				margin-left: 260px;
+			}
+
+			/* LOGIN Status */
+
+			#login_status {
+				position: absolute;
+				top: 180px;
+				left: 660px;
+			}
+
+			/* POSTS */
+
+			#post_content {
+				font-size: 14px;
+				color: #000099;
+				border: 2px dotted;
+				border-color: #003399;
+				padding-left: 10px;
+				padding-right: 10px;
+				max-width: 150px;
+				font-family: cursive;
+				text-align: center;	
+				background-color: #EEEEFF;	
 			}
 
 			#post_table_name {
@@ -329,6 +403,8 @@
 				padding-top: 25px;
 				padding-bottom: 10px;	
 			}
+
+			/* PROFILES */
 
 			#profile {
 				position: absolute;
@@ -340,40 +416,4 @@
 				padding-bottom: 15px;
 				width: 230px;
 				font-family: cursive;	
-			}
-
-			#special_features {
-				position: absolute;
-				top: 150px;
-				left: 300px;
-				width: 470px;
-				font-size: 90%;
-				color: #000099;
-				border: 10px ridge #003399;
-				margin-top: 200px;
-				padding-left: 10px;
-				padding-right: 10px;
-				padding-top: 15px;
-				padding-bottom: 15px;
-				font-family: cursive;
-				text-align: center;	
-				background-color: #EEEEFF;	
-			}
-
-			#warning {
-				position: absolute;
-				top: 150px;
-				left: 300px;
-				width: 270px;
-				font-size: 90%;
-				color: #000099;
-				border: 10px ridge #003399;
-				margin-top: 200px;
-				padding-left: 10px;
-				padding-right: 10px;
-				padding-top: 15px;
-				padding-bottom: 15px;
-				font-family: cursive;
-				text-align: center;	
-				background-color: #EEEEFF;	
 			}

@@ -9,6 +9,8 @@
 
 <form id = "form_input" method = 'POST' action='/users/p_signup'>
 
+	<br>
+
 	First Name<br>
 	<input type = 'text' name = 'first_name'>
 	<br><br>
@@ -27,11 +29,13 @@
 
 	<input type = 'submit' value = 'Sign up'>
 
+	<br><br>Please make sure you fill in all fields.<br><br>
+
 </form>
 
-<div id="menu_horizontal" style = "margin-top: 200px">
+<div id="menu_horizontal" style = "margin-top: 200px; margin-left: 0">
     <ul>
-        <li><a href="/users/signup">Signup</a></li>
+        <li><a href="/users/signup">Sign<br>Up</a></li>
         <li><a href="index">Home</a></li>
         <li><a href="htp://www.google.com">Google</a></li>
     </ul>

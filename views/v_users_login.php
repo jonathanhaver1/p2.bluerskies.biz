@@ -21,6 +21,9 @@
 
 	<?php endif; ?>
 
+
+	<br>Please make sure you fill in all fields.<br>
+
 	<input type = 'submit' value = 'LogIn'><br><br>
 
 </form><br><br><br><br><br><br>

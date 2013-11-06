@@ -32,20 +32,32 @@ class posts_controller extends base_controller {
 
 	public function p_add() {
 
-		# Associate this post with this user
-		$_POST['user_id']  = $this->user->user_id;
+		# Make sure the fields has not been left blank
+  		if (empty($_POST['content'])) {
 
-		# Unix timestamp of when this post was created / modified
-		$_POST['created']  = Time::now();
-		$_POST['modified'] = Time::now();
+		# if the fied has been left blank - alert user
+  			$this->template->content = View::instance('v_error_empty_fields');
+			$this->template->title = "Empty Fields";
+			echo $this->template;
 
-		# Insert into database
-		DB::instance(DB_NAME)->insert('posts', $_POST);
+		# if the field has been filled in
+		} else {
 
-		# Setup view
-		$this->template->content = View::instance('v_posts_added_successfully');
-		$this->template->title = "Success";
-		echo $this->template;
+			# Associate this post with this user
+			$_POST['user_id']  = $this->user->user_id;
+
+			# Unix timestamp of when this post was created / modified
+			$_POST['created']  = Time::now();
+			$_POST['modified'] = Time::now();
+
+			# Insert into database
+			DB::instance(DB_NAME)->insert('posts', $_POST);
+
+			# Setup view
+			$this->template->content = View::instance('v_posts_added_successfully');
+			$this->template->title = "Success";
+			echo $this->template;
+		}
 	}
 
 	/**
@@ -175,26 +187,45 @@ class posts_controller extends base_controller {
 	**/
 	public function email($post_id = null) {
 
-		##Setup view
-		$this->template->content = View::instance('v_posts_email');
-		$this->template->title = "Email the Post to a Friend";
-		$this->template->content->post_id = $post_id;
+		# Query whehther friends exist
+		$q = '	SELECT friend_id
+				FROM friends
+		        WHERE user_id = '.$this->user->user_id;
+				$friends_exist = DB::instance(DB_NAME)->select_field($q);
 
-   		# Query for list of friends
-    	$q = 'SELECT 
-    			friends.friend_id,
-            	friends.first_name,
-            	friends.last_name,
-            	friends.email
-        		FROM friends
-        		WHERE friends.user_id = '.$this->user->user_id;
+		# If no friends to display, display 'Sorry No Friends'
+		if (!$friends_exist) {
+			#Setup view
+			$this->template->content = View::instance('v_friends_no_friends');
+			$this->template->title = "No Friends registered";
 
-		$friends = DB::instance(DB_NAME)->select_rows($q);
+			# Render the View
+			echo $this->template;
 
-		# Pass data to the View and render it
-		$this->template->content->friends = $friends;
+		# If friends to display
+		} else {
 
-		echo $this->template;
+			##Setup view
+			$this->template->content = View::instance('v_posts_email');
+			$this->template->title = "Email the Post to a Friend";
+			$this->template->content->post_id = $post_id;
+
+	   		# Query for list of friends
+	    	$q = 'SELECT 
+	    			friends.friend_id,
+	            	friends.first_name,
+	            	friends.last_name,
+	            	friends.email
+	        		FROM friends
+	        		WHERE friends.user_id = '.$this->user->user_id;
+
+			$friends = DB::instance(DB_NAME)->select_rows($q);
+
+			# Pass data to the View and render it
+			$this->template->content->friends = $friends;
+
+			echo $this->template;
+		}
 	}
 
 	public function p_email($friend_id = null, $post_id = null) {

@@ -1,8 +1,8 @@
 <h2>Create Your Profile</h2>
 
 <div id ="description">
-    You can create and post your profile below<br>
-</div>
+    You can create and post your profile below.<br>
+    If you already have a profile you will be taken their automatically.<br>
 
 <form id = "form_profile" method='POST' action='/profiles/p_create_profile'>
 
@@ -10,7 +10,7 @@
 
         <br>
         Please enter your details.<br>
-        If you want to skip a field, leave it blank.<br><br>
+        You must fill in all fields.<br><br>
 
         <label for='city'>City:</label><br>
         <textarea name='city' id='city' type='text' size='25'></textarea><br><br>
