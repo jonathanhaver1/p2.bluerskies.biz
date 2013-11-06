@@ -1,7 +1,7 @@
-<h2>No Profile</h2>
+<h2>No Profile Found</h2>
 
-<div id = "warning" style = "width = 180px">
-	Sorry, the user you specified does not yet have a profile<br>
+<div id = "warning" style = "width: 180px">
+	Sorry, it appears the user you specified does not yet have a profile<br>
 </div>
 
 <div id="menu_horizontal" style = "margin-top: 200px">

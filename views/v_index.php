@@ -23,15 +23,16 @@
 
 			<span style = "font-size: large; background-color: #CCCCFF"><strong>+1</strong></span> You can also<br><br>
 
-			Create and modify your profile<br>
-			Display other users' profiles<br>
-			Learn if you or another user does not have a profile<br>when you try to view it<br>
-			Email a post to a friend from your list of friends<br>
-			Compile, modify and display a list of your friends<br>
-			Invite friends to join the site and contribute by email<br>
-			Like Posts (+1)<br>
-			See your log in status (upper right corner)<br>
-			and more ...
+			+ Create and modify your profile<br>
+			+ Display other users' profiles<br>
+			See if + a user has not registered a profile,<br>
+			+ you are not following user posts or + have not registered friends.<br>
+			+ Email a post to a friend from your list of friends<br>
+			+ Compile and display a list of your friends<br>
+			+ Invite friends to join the site and contribute by email<br>
+			+ Like Posts (+1)<br>
+			+ See your log in status (upper right corner)<br>
+			+ and more ...
 
 		</div>
 

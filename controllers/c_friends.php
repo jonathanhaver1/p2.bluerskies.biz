@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Maintain a personal list of friends
+* and process email invitations
+**/
 class friends_controller extends base_controller {
 
 	public function _construct() {
@@ -11,6 +15,9 @@ class friends_controller extends base_controller {
 		}
 	}
 
+	/**
+	* Add a Friend
+	**/
 	public function add() {
 
 		# Registered users only
@@ -47,30 +54,53 @@ class friends_controller extends base_controller {
 
 	public function index() {
 
-		# Set up the View
-		$this->template->content = View::instance('v_friends_index');
-		$this->template->title   = "Friends";
+		# Query whehther friends exist
+		$q = '	SELECT friend_id
+				FROM friends
+		        WHERE user_id = '.$this->user->user_id;
+		$friends_exist = DB::instance(DB_NAME)->select_field($q);
 
-		# Query for list of friends
-    	$q = '	SELECT 
-            	friend_id,
-            	first_name,
-            	last_name,
-            	email,
-            	modified,
-            	interests,
-            	interests,
-            	comments
-        		FROM friends
-        		WHERE user_id = '.$this->user->user_id;
+		# If no friends to display, display 'Sorry No Friends'
+		if (!$friends_exist) {
+			#Setup view
+			$this->template->content = View::instance('v_friends_no_friends');
+			$this->template->title = "No Friends registered";
 
-		$friends = DB::instance(DB_NAME)->select_rows($q);
+			# Render the View
+			echo $this->template;
 
-		# Pass data to the View and render it
-		$this->template->content->friends = $friends;
-		echo $this->template;
+		# If friends to display
+		} else {
+
+			# Set up the View
+			$this->template->content = View::instance('v_friends_index');
+			$this->template->title   = "Friends";
+
+			# Query for list of friends
+	    	$q = '	SELECT 
+	            	friend_id,
+	            	first_name,
+	            	last_name,
+	            	email,
+	            	modified,
+	            	interests,
+	            	interests,
+	            	comments
+	        		FROM friends
+	        		WHERE user_id = '.$this->user->user_id;
+
+			$friends = DB::instance(DB_NAME)->select_rows($q);
+
+			# Pass data to the View and render it
+			$this->template->content->friends = $friends;
+			echo $this->template;
+		}
 	}
 
+
+	/**
+	* Email an invitation to a friend
+	**/
 	public function email_invitation($friend_id = null) {
 
    		# Query for friend name and email

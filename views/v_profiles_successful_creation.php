@@ -1,6 +1,6 @@
-<h2>Profile Created</h2>
+<h2>Profile Created!</h2>
 
-<div id = "special_features" style = "width: 200px">
+<div id = "special_features" style = "width: 180px">
 	You successfuly created a personal profile.
 </div>
 

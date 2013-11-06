@@ -9,7 +9,7 @@
 
     </span>
     
-    <input type='submit' value='Create Profile'><br><br>
+    <input type='submit' value='Create Post'><br><br>
 
 </form>
 

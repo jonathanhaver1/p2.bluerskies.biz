@@ -12,7 +12,7 @@
 	Birth Year: <?=$profile['birthyear']?><br>
 </div>
 
-<div id="menu_horizontal" style = "margin-top: 200px">
+<div id="menu_horizontal" style = "margin-top: 240px; margin-left: 43px">
 		<ul>
 			<li><a href="/profiles/modify_profile">Modify<br>Your Profile</a></li>
 			<li><a href="/friends/add">Add<br>a Friend</a></li>

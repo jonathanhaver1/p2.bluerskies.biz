@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Add, maintain and dsiplay
+* registered users and user information
+**/
 class users_controller extends base_controller {
 
 	public function _construct() {
@@ -11,6 +15,9 @@ class users_controller extends base_controller {
 		}
 	}
 
+	/**
+	* Add a new user
+	**/
 	public function signup() {
 		
 		##Setup view
@@ -80,11 +87,8 @@ class users_controller extends base_controller {
 
 		# Matching token -> login succeeded
 		} else {
-			/* Store this token in a cookie
-			param 1 = name of the cookie
-			param 2 = the value of the cookie
-			param 4 = the path of the cookie
-			*/
+			
+			# Store this token in a cookie
 			setcookie("token", $token, strtotime('+2 weeks'), '/');
 
 			# Send to the main page
@@ -92,6 +96,9 @@ class users_controller extends base_controller {
 		}
 	}
 
+	/**
+	* Logout a registered user
+	**/
 	public function logout() {
 
 		# Generate and save a new token for the next login
@@ -108,6 +115,9 @@ class users_controller extends base_controller {
 		Router::redirect("/");
 	}
 
+	/**
+	* Display the profile of a registered user
+	**/
 	public function profile() {
 		# if not logged in -> redirect to the login page
 		if (!$this->user) {
@@ -134,7 +144,7 @@ class users_controller extends base_controller {
 			$this->template->content = View::instance('v_profiles_display');
 			$this->template->title = "Your Profile";
 
-			# Build the query
+			# Query for user profile information
 			$q = '	SELECT 
 						user_profiles.city,
 						user_profiles.country,
@@ -147,13 +157,10 @@ class users_controller extends base_controller {
 						user_profiles.user_id = users.user_id 
 					WHERE user_profiles.user_id = '.$this->user->user_id;
 
-			# Run the query
 			$profile = DB::instance(DB_NAME)->select_row($q);
 
-			# Pass data to the View
+			# Pass data to the View and render it
 			$this->template->content->profile = $profile;
-		
-			# Render the View
 			echo $this->template;
 		}
 	}

@@ -1,5 +1,8 @@
 <?php
 
+/**
+* Process and Display user posts
+**/
 class posts_controller extends base_controller {
 
 	public function _construct() {
@@ -10,6 +13,9 @@ class posts_controller extends base_controller {
 		Router::redirect('/users/login'); }
 	}
 
+	/**
+	* Add a Post
+	**/
 	public function add() {
 
 		# if not logged in -> redirect to the login page
@@ -22,7 +28,7 @@ class posts_controller extends base_controller {
 
 		#Render template
 		echo $this->template;
-		}
+	}
 
 	public function p_add() {
 
@@ -42,6 +48,9 @@ class posts_controller extends base_controller {
 		echo $this->template;
 	}
 
+	/**
+	* Provide an index of posts
+	**/
 	public function index() {
 
 		# if not logged in -> redirect to the login page
@@ -98,6 +107,9 @@ class posts_controller extends base_controller {
 	}
 
 
+	/**
+	* Follow and Unfollow other users
+	**/
 	public function users() {
 
 		# if not logged in -> redirect to the login page
@@ -158,6 +170,9 @@ class posts_controller extends base_controller {
 
 	}
 
+	/**
+	* Email a Post
+	**/
 	public function email($post_id = null) {
 
 		##Setup view
@@ -231,13 +246,16 @@ class posts_controller extends base_controller {
 		echo $this->template;
 	}
 
-		public function like($post_id = null) {
+	/**
+	* Like a Post
+	**/
+	public function like($post_id = null) {
 
 		# get current likes information from database
-   		$q = 'SELECT 
-            	likes
-        		FROM posts
-        		WHERE post_id = '.$post_id;
+			$q = 'SELECT 
+	        	likes
+	    		FROM posts
+	    		WHERE post_id = '.$post_id;
 		$likes = DB::instance(DB_NAME)->select_field($q);
 
 		# increment the value by 1
