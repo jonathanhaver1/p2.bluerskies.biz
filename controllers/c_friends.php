@@ -76,6 +76,11 @@ class friends_controller extends base_controller {
 
 	public function index() {
 
+		# Registered users only
+		if (!$this->user) {
+			Router::redirect('/users/login');
+		}
+
 		# Query whehther friends exist
 		$q = '	SELECT friend_id
 				FROM friends

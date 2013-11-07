@@ -96,8 +96,6 @@ class users_controller extends base_controller {
 		$this->template->content->error = $error;
 		$this->template->title = "Login";
 
-	sleep(10);
-
 		# Render template
 		echo $this->template;
 	}

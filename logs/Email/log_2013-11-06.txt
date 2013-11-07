@@ -84,3 +84,99 @@
 					Post: hello
  
 2013-11-06 16:51:12 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 23:19:33 - INFO --> -------------------------- 
+2013-11-06 23:19:33 - INFO --> Controller/Method: posts/p_email 
+2013-11-06 23:19:33 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 23:19:33 - INFO --> To: sadfsdsadsad saddsasaddsa (saddsadsa),  
+2013-11-06 23:19:33 - INFO --> CC:  
+2013-11-06 23:19:33 - INFO --> BCC:  
+2013-11-06 23:19:33 - INFO --> Subject: A post that may interest you 
+2013-11-06 23:19:33 - INFO --> Body: Hi sadfsdsadsad
+
+					I just found this post that may interest you:
+
+					Author: hello hello
+
+					Post: hello
+ 
+2013-11-06 23:19:33 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 23:19:38 - INFO --> -------------------------- 
+2013-11-06 23:19:38 - INFO --> Controller/Method: posts/p_email 
+2013-11-06 23:19:38 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 23:19:38 - INFO --> To: sadfsdsadsad saddsasaddsa (saddsadsa),  
+2013-11-06 23:19:38 - INFO --> CC:  
+2013-11-06 23:19:38 - INFO --> BCC:  
+2013-11-06 23:19:38 - INFO --> Subject: A post that may interest you 
+2013-11-06 23:19:38 - INFO --> Body: Hi sadfsdsadsad
+
+					I just found this post that may interest you:
+
+					Author: hello hello
+
+					Post: hello
+ 
+2013-11-06 23:19:38 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 23:20:46 - INFO --> -------------------------- 
+2013-11-06 23:20:46 - INFO --> Controller/Method: posts/p_email 
+2013-11-06 23:20:46 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 23:20:46 - INFO --> To: sadfsdsadsad saddsasaddsa (saddsadsa),  
+2013-11-06 23:20:46 - INFO --> CC:  
+2013-11-06 23:20:46 - INFO --> BCC:  
+2013-11-06 23:20:46 - INFO --> Subject: A post that may interest you 
+2013-11-06 23:20:46 - INFO --> Body: Hi sadfsdsadsad
+
+					I just found this post that may interest you:
+
+					Author: hello hello
+
+					Post: hello
+ 
+2013-11-06 23:20:46 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 23:20:51 - INFO --> -------------------------- 
+2013-11-06 23:20:51 - INFO --> Controller/Method: posts/p_email 
+2013-11-06 23:20:51 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 23:20:51 - INFO --> To: sadfsdsadsad saddsasaddsa (saddsadsa),  
+2013-11-06 23:20:51 - INFO --> CC:  
+2013-11-06 23:20:51 - INFO --> BCC:  
+2013-11-06 23:20:51 - INFO --> Subject: A post that may interest you 
+2013-11-06 23:20:51 - INFO --> Body: Hi sadfsdsadsad
+
+					I just found this post that may interest you:
+
+					Author: hello hello
+
+					Post: hello
+ 
+2013-11-06 23:20:51 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 23:20:55 - INFO --> -------------------------- 
+2013-11-06 23:20:55 - INFO --> Controller/Method: posts/p_email 
+2013-11-06 23:20:55 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 23:20:55 - INFO --> To: sadfsdsadsad saddsasaddsa (saddsadsa),  
+2013-11-06 23:20:55 - INFO --> CC:  
+2013-11-06 23:20:55 - INFO --> BCC:  
+2013-11-06 23:20:55 - INFO --> Subject: A post that may interest you 
+2013-11-06 23:20:55 - INFO --> Body: Hi sadfsdsadsad
+
+					I just found this post that may interest you:
+
+					Author: hello hello
+
+					Post: hello
+ 
+2013-11-06 23:20:55 - INFO --> FAILED TO SEND EMAIL 
+2013-11-06 23:21:22 - INFO --> -------------------------- 
+2013-11-06 23:21:22 - INFO --> Controller/Method: posts/p_email 
+2013-11-06 23:21:22 - INFO --> From: BluerSkies (jonathanhaverkampf@gmail.com) 
+2013-11-06 23:21:22 - INFO --> To: sadfsdsadsad saddsasaddsa (saddsadsa),  
+2013-11-06 23:21:22 - INFO --> CC:  
+2013-11-06 23:21:22 - INFO --> BCC:  
+2013-11-06 23:21:22 - INFO --> Subject: A post that may interest you 
+2013-11-06 23:21:22 - INFO --> Body: Hi sadfsdsadsad
+
+					I just found this post that may interest you:
+
+					Author: hello hello
+
+					Post: hello
+ 
+2013-11-06 23:21:22 - INFO --> FAILED TO SEND EMAIL 

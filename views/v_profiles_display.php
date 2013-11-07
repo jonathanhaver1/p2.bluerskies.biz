@@ -19,7 +19,7 @@
 </div>
 
 <!-- horizontal menu !-->
-<div id="menu_horizontal" style = "margin-top: 330px; margin-left: 43px">
+<div id="menu_horizontal" style = "margin-top: 350px; margin-left: 43px">
 		<ul>
 			<li><a href="/profiles/modify_profile">Modify<br>Your Profile</a></li>
 			<li><a href="/friends/add">Add<br>a Friend</a></li>

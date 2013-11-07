@@ -38,7 +38,7 @@
 <div id="menu_horizontal" style = "margin-top: 150px">
     <ul>
         <li><a href="/users/signup">Sign<br>Up</a></li>
-        <li><a href="index">Home</a></li>
-        <li><a href="htp://www.google.com">Google</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="http://www.google.com">Google</a></li>
     </ul>
 </div>
